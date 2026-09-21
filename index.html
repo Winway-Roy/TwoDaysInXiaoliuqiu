@@ -25,9 +25,9 @@
       </div>
       <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-600">
         <a href="#itinerary" class="hover:text-cyan-600 transition">行程節奏</a>
+        <a href="#day-routes" class="hover:text-cyan-600 transition">全區路線地圖</a>
         <a href="#food-candidates" class="hover:text-cyan-600 transition">午餐10大名店</a>
         <a href="#checklist" class="hover:text-cyan-600 transition">必帶清單</a>
-        <a href="#secret" class="hover:text-cyan-600 transition">私房秘境</a>
       </nav>
       <button onclick="window.print()" class="text-xs bg-cyan-600 hover:bg-cyan-700 text-white px-3 py-1.5 rounded-lg flex items-center gap-1.5 transition shadow-sm">
         <i class="fa-solid fa-print"></i>
@@ -46,22 +46,22 @@
         小琉球 ✕ 東港 2天1夜 親子歡樂海島遊
       </h1>
       <p class="text-sm sm:text-base text-cyan-100 max-w-xl mx-auto font-light">
-        6 大 3 小（3歲、5歲）悠閒無壓力版！節奏放鬆、私房秘境全入列，點擊地標即開 Google Maps 導航！
+        6 大 3 小悠閒海島行！天南民宿・藍鯨號・筑安心燒物定案，全區景點地圖已串接！
       </p>
 
       <!-- 快速資訊卡 -->
       <div class="pt-4 grid grid-cols-2 sm:grid-cols-4 gap-2.5 max-w-2xl mx-auto text-xs text-left">
         <div class="bg-white/10 rounded-lg p-2.5 backdrop-blur-sm">
-          <div class="text-cyan-200">隊員名單</div>
-          <div class="font-bold text-sm">6 大人 + 3 幼童</div>
+          <div class="text-cyan-200">住宿民宿</div>
+          <div class="font-bold text-sm">天南民宿 Sky south</div>
         </div>
         <div class="bg-white/10 rounded-lg p-2.5 backdrop-blur-sm">
           <div class="text-cyan-200">去程船班</div>
           <div class="font-bold text-sm">10/3 10:00 東港發</div>
         </div>
         <div class="bg-white/10 rounded-lg p-2.5 backdrop-blur-sm">
-          <div class="text-cyan-200">機車租借</div>
-          <div class="font-bold text-sm">4 台 (專車載行李)</div>
+          <div class="text-cyan-200">首日晚餐</div>
+          <div class="font-bold text-sm">筑安心燒物 18:30</div>
         </div>
         <div class="bg-white/10 rounded-lg p-2.5 backdrop-blur-sm">
           <div class="text-cyan-200">回程船班</div>
@@ -72,23 +72,76 @@
   </section>
 
   <!-- 主要內容區 -->
-  <main class="max-w-4xl mx-auto px-4 py-8 space-y-12">
+  <main class="max-w-4xl mx-auto px-4 py-8 space-y-10">
 
-    <!-- 行程表區塊 -->
+    <!-- 全區串接導航路線地圖區塊 -->
+    <section id="day-routes" class="space-y-4">
+      <div class="border-b border-slate-200 pb-3 flex items-center justify-between">
+        <h2 class="text-xl sm:text-2xl font-black text-slate-800 flex items-center gap-2">
+          <i class="fa-solid fa-map-location-dot text-cyan-600"></i>
+          全區行程多點串接地圖（一鍵導航）
+        </h2>
+        <span class="text-xs text-slate-500">排除用餐・純景點連線</span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <!-- Day 1 全區串接 -->
+        <div class="bg-gradient-to-br from-cyan-50 to-blue-50 border-2 border-cyan-200 rounded-2xl p-4 shadow-sm flex flex-col justify-between">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold bg-cyan-700 text-white px-2.5 py-0.5 rounded-full">Day 1 景點串接路線</span>
+              <i class="fa-solid fa-route text-cyan-600 text-lg"></i>
+            </div>
+            <h3 class="font-black text-base text-slate-800">首日小琉球全島串接地圖</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              <strong>路線序號：</strong>東琉線碼頭 ➔ 白沙尾觀光港 ➔ 天南民宿 ➔ 百年老榕樹 ➔ 藍鯨號玻璃船 ➔ 旺昌冰舖 ➔ 中澳沙灘 ➔ 落日亭 ➔ 筑安心燒物
+            </p>
+          </div>
+          <div class="pt-4">
+            <a href="https://www.google.com/maps/dir/?api=1&origin=東琉線交通船碼頭&destination=筑安心燒物吃到飽&waypoints=小琉球白沙尾觀光港|天南民宿|小琉球百年老榕樹|小琉球藍鯨號海底觀光半潛艇|小琉球旺昌冰舖|小琉球中澳沙灘|小琉球落日亭" target="_blank" rel="noopener noreferrer" class="w-full bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 text-sm shadow-sm transition">
+              <i class="fa-solid fa-location-arrow"></i>
+              <span>開啟 Day 1 Google Maps 完整串接導航</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Day 2 全區串接 -->
+        <div class="bg-gradient-to-br from-teal-50 to-emerald-50 border-2 border-teal-200 rounded-2xl p-4 shadow-sm flex flex-col justify-between">
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold bg-teal-700 text-white px-2.5 py-0.5 rounded-full">Day 2 景點串接路線</span>
+              <i class="fa-solid fa-route text-teal-600 text-lg"></i>
+            </div>
+            <h3 class="font-black text-base text-slate-800">次日雙島與東港串接地圖</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              <strong>路線序號：</strong>天南民宿 ➔ 花瓶岩 ➔ 厚石魚澳 ➔ 山豬溝生態步道 ➔ 白沙尾港 ➔ 東港碼頭 ➔ 海上教堂咖啡 ➔ 大鮪魚航海樂園
+            </p>
+          </div>
+          <div class="pt-4">
+            <a href="https://www.google.com/maps/dir/?api=1&origin=天南民宿&destination=大鮪魚航海樂園&waypoints=小琉球花瓶岩|小琉球厚石魚澳|山豬溝生態步道|小琉球白沙尾觀光港|東琉線交通船碼頭|東港海上教堂咖啡" target="_blank" rel="noopener noreferrer" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 text-sm shadow-sm transition">
+              <i class="fa-solid fa-location-arrow"></i>
+              <span>開啟 Day 2 Google Maps 完整串接導航</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 行程節奏表 -->
     <section id="itinerary" class="space-y-8">
       <div class="border-b border-slate-200 pb-3 flex items-center justify-between">
         <h2 class="text-xl sm:text-2xl font-black text-slate-800 flex items-center gap-2">
-          <i class="fa-solid fa-route text-cyan-600"></i>
+          <i class="fa-solid fa-calendar-check text-cyan-600"></i>
           詳細行程節奏表
         </h2>
-        <span class="text-xs text-slate-500">放鬆節奏・無死板時間限制</span>
+        <span class="text-xs text-slate-500">以半小時為節奏・點地標即導航</span>
       </div>
 
       <!-- DAY 1 -->
       <div class="space-y-4">
         <div class="flex items-center gap-2 bg-gradient-to-r from-cyan-700 to-teal-700 text-white px-4 py-2.5 rounded-xl shadow-sm">
-          <i class="fa-solid fa-calendar-day"></i>
-          <span class="font-bold text-base sm:text-lg">Day 1：10 月 3 日 (週六) 海島登陸 ✕ 秘境遠眺 ✕ 中澳踏浪</span>
+          <i class="fa-solid fa-sun"></i>
+          <span class="font-bold text-base sm:text-lg">Day 1：10 月 3 日 (週六) 海島登陸 ✕ 藍鯨號 ✕ 中澳踏浪 ✕ 筑安心</span>
         </div>
 
         <div class="space-y-3">
@@ -99,13 +152,13 @@
                 <i class="fa-regular fa-clock"></i> 09:30
               </span>
               <h3 class="font-black text-base sm:text-lg text-slate-800">東港碼頭報到 ➔ 準備登船</h3>
-              <a href="https://maps.google.com/?cid=12913519987617728265" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2 py-0.5 rounded bg-cyan-50 text-cyan-700 hover:bg-cyan-100 w-fit flex items-center gap-1">
-                <i class="fa-solid fa-map-pin"></i> 東港東琉線碼頭
+              <a href="https://www.google.com/maps/search/?api=1&query=東琉線碼頭" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-cyan-50 text-cyan-700 hover:bg-cyan-100 w-fit flex items-center gap-1">
+                <i class="fa-solid fa-map-pin"></i> 東港碼頭導航
               </a>
             </div>
             <div class="mt-2.5 bg-amber-50 border-l-4 border-amber-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-amber-900 leading-relaxed">
               <span class="font-bold">⚠️ 貼心叮嚀：</span>
-              假日人潮多提早半小時排隊，備妥全員健保卡與大人身分證。會暈船的大人與小孩記得此時先吃暈船藥。
+              假日人潮多提早半小時排隊，備妥全員健保卡與身分證查驗。容易暈船者請此時服用暈船藥。
             </div>
           </div>
 
@@ -116,28 +169,30 @@
                 <i class="fa-regular fa-clock"></i> 10:00
               </span>
               <h3 class="font-black text-base sm:text-lg text-slate-800">搭船啟航前往小琉球</h3>
-              <a href="https://maps.google.com/?cid=992126652740085585" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2 py-0.5 rounded bg-cyan-50 text-cyan-700 hover:bg-cyan-100 w-fit flex items-center gap-1">
-                <i class="fa-solid fa-ship"></i> 抵達白沙尾觀光港
+              <a href="https://www.google.com/maps/search/?api=1&query=白沙尾觀光港" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-cyan-50 text-cyan-700 hover:bg-cyan-100 w-fit flex items-center gap-1">
+                <i class="fa-solid fa-ship"></i> 抵達白沙尾港
               </a>
             </div>
             <div class="mt-2.5 bg-amber-50 border-l-4 border-amber-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-amber-900 leading-relaxed">
               <span class="font-bold">🌊 貼心叮嚀：</span>
-              航程約 25–30 分鐘，吹海風看海景，準備登陸美麗小琉球！
+              航程約 25–30 分鐘，吹吹海風欣賞外海波光粼粼！
             </div>
           </div>
 
-          <!-- 項目 3 -->
+          <!-- 項目 3 (天南民宿) -->
           <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
               <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
                 <i class="fa-regular fa-clock"></i> 10:30
               </span>
-              <h3 class="font-black text-base sm:text-lg text-slate-800">領機車 ➔ 民宿 Check-in 與解說（抓1小時）</h3>
-              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 w-fit">碼頭車行 ➔ 下榻民宿</span>
+              <h3 class="font-black text-base sm:text-lg text-slate-800">領機車 ➔ 天南民宿 Check-in 設施解說（抓1小時）</h3>
+              <a href="https://www.google.com/maps/search/?api=1&query=天南民宿+小琉球" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-blue-50 text-blue-700 hover:bg-blue-100 w-fit flex items-center gap-1">
+                <i class="fa-solid fa-hotel"></i> 天南民宿導航
+              </a>
             </div>
             <div class="mt-2.5 bg-blue-50 border-l-4 border-blue-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-blue-900 leading-relaxed">
               <span class="font-bold">🛵 貼心叮嚀：</span>
-              領 4 台機車，大件行李直接交給車行專車直送民宿！大人夾坐幼童慢騎至民宿，辦理入住、聽管家解說島嶼設施並在冷氣房稍作休息。
+              領取 4 台機車，大件行李交由車行專車直送<strong>【天南民宿】（中正路115號）</strong>！騎車至民宿辦理入住、聽管家解說島嶼設施，在冷氣房稍作休息整頓。
             </div>
           </div>
 
@@ -154,41 +209,41 @@
             </div>
             <div class="mt-2.5 bg-emerald-50 border-l-4 border-emerald-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-emerald-950 leading-relaxed">
               <span class="font-bold">🍽️ 貼心叮嚀：</span>
-              預留一個半小時寬裕用餐，吹強冷氣慢慢享用合菜海鮮。可從下方 10 間精選名店（高記、達欣、流行海產等）投票決定！
+              預留 1.5 小時寬裕用餐，吹強冷氣慢慢享用合菜海鮮。可從下方 10 間精選名店（高記、達欣、流行海產等）自由挑選！
             </div>
           </div>
 
-          <!-- 項目 5 (安插私房秘境：百年老榕樹) -->
+          <!-- 項目 5 (百年老榕樹) -->
           <div class="bg-gradient-to-br from-emerald-50 to-teal-50 border-2 border-emerald-300 rounded-xl p-4 shadow-sm">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-emerald-200">
               <span class="text-sm font-bold text-emerald-700 flex items-center gap-1.5">
-                <i class="fa-regular fa-clock"></i> 13:00
+                <i class="fa-regular fa-clock"></i> 12:45
               </span>
-              <h3 class="font-black text-base sm:text-lg text-emerald-950">私房秘境：百年老榕樹 ✕ 俯瞰厚石裙礁</h3>
-              <a href="https://maps.google.com/?cid=6716075939217822093" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2 py-0.5 rounded bg-emerald-200 text-emerald-900 hover:bg-emerald-300 w-fit flex items-center gap-1">
-                <i class="fa-solid fa-tree"></i> 老榕樹導航
+              <h3 class="font-black text-base sm:text-lg text-emerald-950">私房秘境：百年老榕樹 ✕ 鳥瞰厚石裙礁</h3>
+              <a href="https://www.google.com/maps/search/?api=1&query=小琉球百年老榕樹" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-emerald-200 text-emerald-900 hover:bg-emerald-300 w-fit flex items-center gap-1">
+                <i class="fa-solid fa-tree"></i> 老榕樹秘境導航
               </a>
             </div>
             <div class="mt-2.5 bg-white/80 border-l-4 border-emerald-500 p-2.5 rounded-r-lg text-xs sm:text-sm text-emerald-950 leading-relaxed">
               <span class="font-bold">📸 貼心叮嚀：</span>
-              吃飽後順道上山！穿過榕樹旁平坦小徑僅 30 秒，制高點視野瞬間豁然開朗，居高臨下鳥瞰整片厚石裙礁與漸層果凍海，拍張大合照超壯觀！
+              穿過平坦林蔭小徑步行僅 30 秒，制高點視野開闊，居高臨下鳥瞰整片湛藍厚石裙礁，適合拍張全員大合照！
             </div>
           </div>
 
-          <!-- 項目 6 -->
-          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
+          <!-- 項目 6 (藍鯨號玻璃船 13:20) -->
+          <div class="bg-white border-2 border-cyan-500 rounded-xl p-4 shadow-sm">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
               <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
-                <i class="fa-regular fa-clock"></i> 13:30
+                <i class="fa-regular fa-clock"></i> 13:10 報到 / 13:20 開船
               </span>
-              <h3 class="font-black text-base sm:text-lg text-slate-800">半潛艇玻璃船（免濕身看海龜）</h3>
-              <a href="https://maps.google.com/?cid=992126652740085585" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2 py-0.5 rounded bg-cyan-50 text-cyan-700 hover:bg-cyan-100 w-fit flex items-center gap-1">
-                <i class="fa-solid fa-location-dot"></i> 白沙尾港碼頭
+              <h3 class="font-black text-base sm:text-lg text-slate-800">藍鯨號海底觀光半潛艇（免濕身看海龜）</h3>
+              <a href="https://www.google.com/maps/search/?api=1&query=小琉球藍鯨號海底觀光半潛艇" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-cyan-600 text-white hover:bg-cyan-700 w-fit flex items-center gap-1">
+                <i class="fa-solid fa-anchor"></i> 藍鯨號售票處導航
               </a>
             </div>
-            <div class="mt-2.5 bg-cyan-50 border-l-4 border-cyan-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-cyan-900 leading-relaxed">
-              <span class="font-bold">🐢 貼心叮嚀：</span>
-              免沾濕衣服！坐在下層空調船艙玻璃窗前，近距離尋找綠蠵龜、熱帶魚群與珊瑚礁生態。
+            <div class="mt-2.5 bg-cyan-50 border-l-4 border-cyan-500 p-2.5 rounded-r-lg text-xs sm:text-sm text-cyan-950 leading-relaxed">
+              <span class="font-bold text-rose-600">⚓ 務必注意：</span>
+              <strong>已預約 13:20 航班！請全員於 13:10（提早10分鐘）抵達白沙尾觀光碼頭售票處報到登船</strong>。坐在下層冷氣船艙玻璃窗前，零距離尋找綠蠵龜與珊瑚礁生態！
             </div>
           </div>
 
@@ -196,21 +251,21 @@
           <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
               <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
-                <i class="fa-regular fa-clock"></i> 14:30
+                <i class="fa-regular fa-clock"></i> 14:15
               </span>
-              <h3 class="font-black text-base sm:text-lg text-slate-800">清涼吃冰 ✕ 白沙尾老街悠閒漫步（時間充裕放鬆逛）</h3>
+              <h3 class="font-black text-base sm:text-lg text-slate-800">清涼吃冰 ✕ 白沙尾老街悠閒漫步（放寬時間）</h3>
               <div class="flex gap-2">
-                <a href="https://maps.google.com/?cid=6169997003507829632" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2 py-0.5 rounded bg-pink-50 text-pink-700 hover:bg-pink-100 flex items-center gap-1">
+                <a href="https://www.google.com/maps/search/?api=1&query=旺昌冰舖+小琉球" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2 py-0.5 rounded bg-pink-50 text-pink-700 hover:bg-pink-100 flex items-center gap-1">
                   <i class="fa-solid fa-ice-cream"></i> 旺昌冰舖
                 </a>
-                <a href="https://maps.google.com/?cid=13479448583864527996" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2 py-0.5 rounded bg-pink-50 text-pink-700 hover:bg-pink-100 flex items-center gap-1">
+                <a href="https://www.google.com/maps/search/?api=1&query=冰箱冰舖+小琉球" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2 py-0.5 rounded bg-pink-50 text-pink-700 hover:bg-pink-100 flex items-center gap-1">
                   <i class="fa-solid fa-ice-cream"></i> 冰箱冰舖
                 </a>
               </div>
             </div>
             <div class="mt-2.5 bg-pink-50 border-l-4 border-pink-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-pink-900 leading-relaxed">
               <span class="font-bold">🍧 貼心叮嚀：</span>
-              吃招牌芒果雪花冰與焦糖刨冰！時間放寬，大家可以順便在老街散散步、買杯特色涼飲，讓肚子慢慢消化。
+              玻璃船下船直接吃冰！時間放寬，大家可以順便在老街散散步、買杯特色涼飲，讓肚子慢慢消化。
             </div>
           </div>
 
@@ -220,8 +275,10 @@
               <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
                 <i class="fa-regular fa-clock"></i> 15:30
               </span>
-              <h3 class="font-black text-base sm:text-lg text-slate-800">回民宿換裝準備</h3>
-              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 w-fit">下榻民宿</span>
+              <h3 class="font-black text-base sm:text-lg text-slate-800">回天南民宿換裝準備</h3>
+              <a href="https://www.google.com/maps/search/?api=1&query=天南民宿+小琉球" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2 py-0.5 rounded bg-blue-50 text-blue-700 hover:bg-blue-100 w-fit flex items-center gap-1">
+                <i class="fa-solid fa-house"></i> 回民宿
+              </a>
             </div>
             <div class="mt-2.5 bg-blue-50 border-l-4 border-blue-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-blue-900 leading-relaxed">
               <span class="font-bold">🏊 貼心叮嚀：</span>
@@ -236,60 +293,64 @@
                 <i class="fa-regular fa-clock"></i> 16:00
               </span>
               <h3 class="font-black text-base sm:text-lg text-slate-800">中澳沙灘：獨木舟/浮潛 ✕ 親子踏浪玩沙（放電1.5小時）</h3>
-              <a href="https://maps.google.com/?cid=2002468540116276214" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2 py-0.5 rounded bg-cyan-50 text-cyan-700 hover:bg-cyan-100 w-fit flex items-center gap-1">
+              <a href="https://www.google.com/maps/search/?api=1&query=小琉球中澳沙灘" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-cyan-50 text-cyan-700 hover:bg-cyan-100 w-fit flex items-center gap-1">
                 <i class="fa-solid fa-umbrella-beach"></i> 中澳沙灘導航
               </a>
             </div>
             <div class="mt-2.5 bg-cyan-50 border-l-4 border-cyan-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-cyan-900 leading-relaxed">
               <span class="font-bold">🚣 貼心叮嚀：</span>
-              全島最細軟沙灘！傍晚不曬水溫正好，大人划獨木舟出海，小孩在淺灘堆沙堡踩水，1.5 小時暢快放電把下午的冰完全消化光！
+              全島最細軟沙灘！傍晚水溫舒適，大人划獨木舟出海，小孩在淺灘堆沙堡踩水，1.5 小時放電完畢回民宿沖溫水澡！
             </div>
           </div>
 
-          <!-- 項目 10 (安插私房秘境：落日亭夕陽) -->
+          <!-- 項目 10 (落日亭夕陽) -->
           <div class="bg-gradient-to-br from-amber-50 to-orange-50 border-2 border-orange-300 rounded-xl p-4 shadow-sm">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-orange-200">
               <span class="text-sm font-bold text-orange-700 flex items-center gap-1.5">
                 <i class="fa-regular fa-clock"></i> 17:45
               </span>
               <h3 class="font-black text-base sm:text-lg text-orange-950">私房秘境：落日亭 ✕ 粉橘晚霞海景平台</h3>
-              <a href="https://maps.google.com/?cid=14467027552599762199" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2 py-0.5 rounded bg-orange-200 text-orange-900 hover:bg-orange-300 w-fit flex items-center gap-1">
+              <a href="https://www.google.com/maps/search/?api=1&query=小琉球落日亭" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-orange-200 text-orange-900 hover:bg-orange-300 w-fit flex items-center gap-1">
                 <i class="fa-solid fa-sun"></i> 落日亭導航
               </a>
             </div>
             <div class="mt-2.5 bg-white/80 border-l-4 border-orange-500 p-2.5 rounded-r-lg text-xs sm:text-sm text-orange-950 leading-relaxed">
               <span class="font-bold">🌅 貼心叮嚀：</span>
-              10月日落約在 17:45。玩完水回民宿稍作沖洗後，正好順路騎到落日亭！坐在木棧平台涼亭吹海風，看太陽緩緩落入台灣海峽，看完心情超好，直奔 18:30 的 BBQ 大口吃肉！
+              玩水後民宿沖洗乾淨，順路騎車到落日亭吹海風看台灣海峽晚霞，看完心情大好，剛好銜接 18:30 的 BBQ！
             </div>
           </div>
 
-          <!-- 項目 11 -->
-          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
+          <!-- 項目 11 (筑安心燒物) -->
+          <div class="bg-white border-2 border-rose-400 rounded-xl p-4 shadow-sm">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
               <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
                 <i class="fa-regular fa-clock"></i> 18:30
               </span>
-              <h3 class="font-black text-base sm:text-lg text-slate-800">島風 BBQ 烤肉吃到飽</h3>
-              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-rose-50 text-rose-700 w-fit">預訂烤肉餐廳 (18:00~18:30進場)</span>
+              <h3 class="font-black text-base sm:text-lg text-rose-800">島風 BBQ 吃到飽：筑安心燒物</h3>
+              <a href="https://www.google.com/maps/search/?api=1&query=筑安心燒物吃到飽" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-rose-600 text-white hover:bg-rose-700 w-fit flex items-center gap-1">
+                <i class="fa-solid fa-fire"></i> 筑安心導航
+              </a>
             </div>
-            <div class="mt-2.5 bg-rose-50 border-l-4 border-rose-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-rose-900 leading-relaxed">
+            <div class="mt-2.5 bg-rose-50 border-l-4 border-rose-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-rose-950 leading-relaxed">
               <span class="font-bold">🥩 貼心叮嚀：</span>
-              鮮蚵海鮮肉品爽快吃到飽！炭火煙燻環境請隨時照看 3 歲與 5 歲小朋友的走動安全。
+              <strong>已預約 18:30【筑安心燒物】（民權路44-1號）</strong>！鮮蚵、各式肉品生猛海鮮炭火爽快吃到飽！炭火環境請留心幼童走動安全。
             </div>
           </div>
 
-          <!-- 項目 12 -->
-          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
+          <!-- 項目 12 (夜間導覽改為 20:00 出發，19:50 提早10分鐘集合) -->
+          <div class="bg-white border-2 border-purple-500 rounded-xl p-4 shadow-sm">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
               <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
-                <i class="fa-regular fa-clock"></i> 20:00
+                <i class="fa-regular fa-clock"></i> 19:50 集合 / 20:00 出發
               </span>
-              <h3 class="font-black text-base sm:text-lg text-slate-800">夜間陸域生態導覽</h3>
-              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-purple-100 text-purple-800 w-fit">導覽員指定集合點</span>
+              <h3 class="font-black text-base sm:text-lg text-purple-900">夜間陸域生態導覽（天南民宿大廳集合出發）</h3>
+              <a href="https://www.google.com/maps/search/?api=1&query=天南民宿+小琉球" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-purple-100 text-purple-800 hover:bg-purple-200 w-fit flex items-center gap-1">
+                <i class="fa-solid fa-users"></i> 天南民宿大廳集合
+              </a>
             </div>
-            <div class="mt-2.5 bg-purple-50 border-l-4 border-purple-500 p-2.5 rounded-r-lg text-xs sm:text-sm text-purple-950 leading-relaxed">
-              <span class="font-bold text-rose-600">🔦【務必自備手電筒】</span>
-              夜間探索棋盤腳開花奇景、尋找夜行性野生陸蟹與觀星。人手一支手電筒（或頭燈）比手機手電筒亮且安全！戶外草叢蚊蟲多，務必幫孩子穿薄長褲並噴妥防蚊液。
+            <div class="mt-2.5 bg-purple-50 border-l-4 border-purple-500 p-2.5 rounded-r-lg text-xs sm:text-sm text-purple-950 space-y-1 leading-relaxed">
+              <div><span class="font-bold text-rose-600">🔦【務必自備手電筒/頭燈・19:50 集合】：</span><strong>夜間導覽為 20:00 出發，請全員於 19:50（提早10分鐘）在天南民宿大廳集合完畢</strong>，檢查裝備後隨導覽員騎車出發夜探棋盤腳開花、尋找野生陸蟹與觀星！</div>
+              <div class="text-xs text-purple-800">人手一支手電筒比手機更亮且安全。戶外草叢蚊蟲多，務必穿薄長褲並噴妥防蚊液。</div>
             </div>
           </div>
 
@@ -304,7 +365,7 @@
             </div>
             <div class="mt-2.5 bg-slate-50 border-l-4 border-slate-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-slate-700 leading-relaxed">
               <span class="font-bold">🌙 貼心叮嚀：</span>
-              買份酥脆鹹酥雞回民宿小酌放鬆，早點哄睡小朋友，儲備明早海景玩水的滿滿活力！
+              外帶鹹酥雞回民宿小酌放鬆，早點哄睡小朋友，儲備明早海景玩水體力！
             </div>
           </div>
         </div>
@@ -313,7 +374,7 @@
       <!-- DAY 2 -->
       <div class="space-y-4 pt-6">
         <div class="flex items-center gap-2 bg-gradient-to-r from-teal-700 to-cyan-700 text-white px-4 py-2.5 rounded-xl shadow-sm">
-          <i class="fa-solid fa-calendar-day"></i>
+          <i class="fa-solid fa-water"></i>
           <span class="font-bold text-base sm:text-lg">Day 2：10 月 4 日 (週日) 晨光玩水 ✕ 洞穴步道 ✕ 東港盛宴</span>
         </div>
 
@@ -325,42 +386,42 @@
                 <i class="fa-regular fa-clock"></i> 08:00
               </span>
               <h3 class="font-black text-base sm:text-lg text-slate-800">特色早點：超人氣早餐派對</h3>
-              <a href="https://maps.google.com/?cid=10542878275926867550" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2 py-0.5 rounded bg-amber-50 text-amber-800 hover:bg-amber-100 w-fit flex items-center gap-1">
-                <i class="fa-solid fa-utensils"></i> 洪媽媽早餐店
+              <a href="https://www.google.com/maps/search/?api=1&query=洪媽媽早餐店+小琉球" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-amber-50 text-amber-800 hover:bg-amber-100 w-fit flex items-center gap-1">
+                <i class="fa-solid fa-utensils"></i> 洪媽媽早餐導航
               </a>
             </div>
             <div class="mt-2.5 bg-amber-50 border-l-4 border-amber-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-amber-900 leading-relaxed">
               <span class="font-bold">🥐 貼心叮嚀：</span>
-              必點琉球粿、香腸碗粿、賓士包。排隊人潮較多，建議派 2 位大人騎車外帶回民宿房間舒服吹冷氣享用。
+              必點琉球粿、香腸碗粿、賓士包。建議派代表騎車外帶回民宿房間舒服吹冷氣享用。
             </div>
           </div>
 
-          <!-- 項目 2 (花瓶岩 vs 厚石魚澳 二選一) -->
+          <!-- 項目 2 (花瓶岩 vs 厚石魚澳) -->
           <div class="bg-white border-2 border-cyan-400 rounded-xl p-4 shadow-sm">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
               <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
                 <i class="fa-regular fa-clock"></i> 09:00
               </span>
-              <h3 class="font-black text-base sm:text-lg text-slate-800">晨光絕美踏浪：花瓶岩 vs 厚石魚澳（團員二選一）</h3>
+              <h3 class="font-black text-base sm:text-lg text-slate-800">晨光絕美踏浪：花瓶岩 vs 厚石魚澳（二選一）</h3>
               <div class="flex gap-2">
-                <a href="https://maps.google.com/?cid=14430365303717107391" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2 py-0.5 rounded bg-cyan-100 text-cyan-800 hover:bg-cyan-200 flex items-center gap-1">
-                  <i class="fa-solid fa-camera"></i> 花瓶岩
+                <a href="https://www.google.com/maps/search/?api=1&query=小琉球花瓶岩" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-cyan-100 text-cyan-800 hover:bg-cyan-200 flex items-center gap-1">
+                  <i class="fa-solid fa-camera"></i> 花瓶岩導航
                 </a>
-                <a href="https://maps.google.com/?cid=18047913867084561645" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2 py-0.5 rounded bg-teal-100 text-teal-800 hover:bg-teal-200 flex items-center gap-1">
-                  <i class="fa-solid fa-water"></i> 厚石魚澳
+                <a href="https://www.google.com/maps/search/?api=1&query=小琉球厚石魚澳" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-teal-100 text-teal-800 hover:bg-teal-200 flex items-center gap-1">
+                  <i class="fa-solid fa-water"></i> 厚石魚澳導航
                 </a>
               </div>
             </div>
             <div class="mt-2.5 bg-cyan-50 border-l-4 border-cyan-400 p-3 rounded-r-lg text-xs sm:text-sm text-cyan-950 space-y-2 leading-relaxed">
-              <div class="font-bold text-cyan-900">🌊 兩大踏浪點特色比較（大家當天看心情選）：</div>
+              <div class="font-bold text-cyan-900">🌊 兩大踏浪點特色比較（團員當天決定）：</div>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
                 <div class="bg-white/80 p-2.5 rounded border border-cyan-200">
                   <span class="font-bold text-cyan-800 block">🚩 花瓶岩（地標首選）</span>
-                  代表性地標！早晨海水清透，水深只到小腿，近距離看海龜探頭換氣機率極高，拍照打卡最美。
+                  代表性地標！早晨海水極度清透，水深只到小腿，近看綠蠵龜探頭機率高，打卡最美。
                 </div>
                 <div class="bg-white/80 p-2.5 rounded border border-teal-200">
                   <span class="font-bold text-teal-800 block">🏊 厚石魚澳（天然泳池秘境）</span>
-                  外圍巨大礁岩阻隔海浪，內側平靜如天然水池！人潮少、水質透明，退潮時小水窪滿是小魚與寄居蟹。
+                  巨大礁岩阻隔海浪，內側水面平靜如泳池！人潮少、水質透明，退潮時小水窪滿是小魚與寄居蟹。
                 </div>
               </div>
             </div>
@@ -372,12 +433,14 @@
               <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
                 <i class="fa-regular fa-clock"></i> 10:00
               </span>
-              <h3 class="font-black text-base sm:text-lg text-slate-800">回民宿沖洗盥洗 ➔ 退房寄物</h3>
-              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 w-fit">下榻民宿</span>
+              <h3 class="font-black text-base sm:text-lg text-slate-800">回天南民宿沖洗盥洗 ➔ 退房寄物</h3>
+              <a href="https://www.google.com/maps/search/?api=1&query=天南民宿+小琉球" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2 py-0.5 rounded bg-blue-50 text-blue-700 hover:bg-blue-100 w-fit flex items-center gap-1">
+                <i class="fa-solid fa-house"></i> 回民宿
+              </a>
             </div>
             <div class="mt-2.5 bg-blue-50 border-l-4 border-blue-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-blue-900 leading-relaxed">
               <span class="font-bold">🧳 貼心叮嚀：</span>
-              在民宿舒舒服服沖溫水澡、換上外出服。行李打包好辦理退房，行李寄放大廳或直接送往港口車行保管。
+              在民宿舒服沖溫水澡、換外出服。行李打包退房，行李寄放天南民宿大廳或直接送車行。
             </div>
           </div>
 
@@ -394,24 +457,24 @@
             </div>
             <div class="mt-2.5 bg-emerald-50 border-l-4 border-emerald-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-emerald-950 leading-relaxed">
               <span class="font-bold">🐟 貼心叮嚀：</span>
-              同樣留足 1.5 小時，推薦港口周邊的流行海產、達欣或高記，吃飽剛好銜接午後散步。
+              推薦白沙尾港口周邊的流行海產、達欣或高記，吃飽剛好銜接午後散步。
             </div>
           </div>
 
-          <!-- 項目 5 -->
+          <!-- 項目 5 (山豬溝) -->
           <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
               <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
                 <i class="fa-regular fa-clock"></i> 13:00
               </span>
               <h3 class="font-black text-base sm:text-lg text-slate-800">午後散步：山豬溝地質綠蔭步道</h3>
-              <a href="https://maps.google.com/?cid=10498711236659628215" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 hover:bg-emerald-100 w-fit flex items-center gap-1">
-                <i class="fa-solid fa-tree"></i> 山豬溝生態步道
+              <a href="https://www.google.com/maps/search/?api=1&query=山豬溝生態步道" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-100 w-fit flex items-center gap-1">
+                <i class="fa-solid fa-tree"></i> 山豬溝步道導航
               </a>
             </div>
             <div class="mt-2.5 bg-emerald-50 border-l-4 border-emerald-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-emerald-900 leading-relaxed">
               <span class="font-bold">🌿 貼心叮嚀：</span>
-              高聳熱帶樹冠遮蔭極佳，木棧道平緩少階梯，吃飽散步對 3 歲與 5 歲幼童最輕鬆好走。
+              熱帶樹冠遮蔭極佳，木棧道平緩少階梯，吃飽散步對幼童安全無負擔。
             </div>
           </div>
 
@@ -426,7 +489,7 @@
             </div>
             <div class="mt-2.5 bg-indigo-50 border-l-4 border-indigo-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-indigo-900 leading-relaxed">
               <span class="font-bold">🛍️ 貼心叮嚀：</span>
-              免稅店採買提貨（大人出示身分證船票購買菸酒保養品）。機車晚還 1 小時剛好此時歸還。
+              免稅店採買提貨（攜帶身分證與船票）。機車延後 1 小時剛好此時於港口歸還。
             </div>
           </div>
 
@@ -437,8 +500,8 @@
                 <i class="fa-regular fa-clock"></i> 14:00
               </span>
               <h3 class="font-black text-base sm:text-lg text-slate-800">搭乘交通船返抵東港</h3>
-              <a href="https://maps.google.com/?cid=15721944660516329" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2 py-0.5 rounded bg-cyan-50 text-cyan-700 hover:bg-cyan-100 w-fit flex items-center gap-1">
-                <i class="fa-solid fa-ship"></i> 白沙尾港往東港
+              <a href="https://www.google.com/maps/search/?api=1&query=東琉線碼頭" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-cyan-50 text-cyan-700 hover:bg-cyan-100 w-fit flex items-center gap-1">
+                <i class="fa-solid fa-ship"></i> 返抵東港碼頭
               </a>
             </div>
             <div class="mt-2.5 bg-amber-50 border-l-4 border-amber-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-amber-900 leading-relaxed">
@@ -454,7 +517,7 @@
                 <i class="fa-regular fa-clock"></i> 15:00
               </span>
               <h3 class="font-black text-base sm:text-lg text-orange-900">海上教堂咖啡 Maritime Building</h3>
-              <a href="https://maps.google.com/?cid=4296716075487776560" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2 py-0.5 rounded bg-orange-200 text-orange-900 hover:bg-orange-300 w-fit flex items-center gap-1">
+              <a href="https://www.google.com/maps/search/?api=1&query=東港海上教堂咖啡" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-orange-200 text-orange-900 hover:bg-orange-300 w-fit flex items-center gap-1">
                 <i class="fa-solid fa-church"></i> 海上教堂導航
               </a>
             </div>
@@ -471,13 +534,13 @@
                 <i class="fa-regular fa-clock"></i> 16:30
               </span>
               <h3 class="font-black text-base sm:text-lg text-orange-900">大鮪魚航海樂園（東港兒童公園）</h3>
-              <a href="https://maps.google.com/?cid=16568434778841442502" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2 py-0.5 rounded bg-orange-200 text-orange-900 hover:bg-orange-300 w-fit flex items-center gap-1">
+              <a href="https://www.google.com/maps/search/?api=1&query=大鮪魚航海樂園" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-orange-200 text-orange-900 hover:bg-orange-300 w-fit flex items-center gap-1">
                 <i class="fa-solid fa-children"></i> 兒童公園導航
               </a>
             </div>
             <div class="mt-2.5 bg-white/80 border-l-4 border-orange-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-orange-950 leading-relaxed">
               <span class="font-bold">🎪 貼心叮嚀：</span>
-              傍晚不曬最舒適！11米巨型鮪魚溜滑梯、低矮爬網與共融沙坑，讓 3 歲與 5 歲小孩把最後電力放光，回程車上秒睡！
+              傍晚不曬最舒適！11米巨型鮪魚溜滑梯、低矮爬網與共融沙坑，讓幼童把最後電力放光，回程車上秒睡！
             </div>
           </div>
 
@@ -488,7 +551,7 @@
                 <i class="fa-regular fa-clock"></i> 17:30
               </span>
               <h3 class="font-black text-base sm:text-lg text-orange-900">華僑市場海鮮大饗宴 ➔ 滿載賦歸</h3>
-              <a href="https://maps.google.com/?cid=3948497677443123108" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2 py-0.5 rounded bg-orange-200 text-orange-900 hover:bg-orange-300 w-fit flex items-center gap-1">
+              <a href="https://www.google.com/maps/search/?api=1&query=東港華僑市場" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold px-2.5 py-1 rounded-lg bg-orange-200 text-orange-900 hover:bg-orange-300 w-fit flex items-center gap-1">
                 <i class="fa-solid fa-fish"></i> 華僑市場導航
               </a>
             </div>
@@ -517,7 +580,7 @@
         <div class="bg-white border border-slate-200 rounded-xl p-3.5 shadow-sm space-y-1.5 hover:border-emerald-400 transition">
           <div class="flex items-center justify-between">
             <h3 class="font-black text-base text-slate-800">1. 高記特色料理（國宴蜂巢蝦）</h3>
-            <a href="https://maps.google.com/?cid=4860708708934338356" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-cyan-600 hover:underline flex items-center gap-1">
+            <a href="https://www.google.com/maps/search/?api=1&query=小琉球高記特色料理" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-cyan-600 hover:underline flex items-center gap-1">
               <i class="fa-solid fa-map-location-dot"></i> 導航
             </a>
           </div>
@@ -528,7 +591,7 @@
         <div class="bg-white border border-slate-200 rounded-xl p-3.5 shadow-sm space-y-1.5 hover:border-emerald-400 transition">
           <div class="flex items-center justify-between">
             <h3 class="font-black text-base text-slate-800">2. 達欣餐廳（六十年老字號）</h3>
-            <a href="https://maps.google.com/?cid=15817717288664959107" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-cyan-600 hover:underline flex items-center gap-1">
+            <a href="https://www.google.com/maps/search/?api=1&query=小琉球達欣餐廳" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-cyan-600 hover:underline flex items-center gap-1">
               <i class="fa-solid fa-map-location-dot"></i> 導航
             </a>
           </div>
@@ -539,7 +602,7 @@
         <div class="bg-white border border-slate-200 rounded-xl p-3.5 shadow-sm space-y-1.5 hover:border-emerald-400 transition">
           <div class="flex items-center justify-between">
             <h3 class="font-black text-base text-slate-800">3. 夏味鮮海鮮（在地平價熱炒）</h3>
-            <a href="https://maps.google.com/?cid=11953693957589696860" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-cyan-600 hover:underline flex items-center gap-1">
+            <a href="https://www.google.com/maps/search/?api=1&query=小琉球夏味鮮海鮮" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-cyan-600 hover:underline flex items-center gap-1">
               <i class="fa-solid fa-map-location-dot"></i> 導航
             </a>
           </div>
@@ -550,7 +613,7 @@
         <div class="bg-white border border-slate-200 rounded-xl p-3.5 shadow-sm space-y-1.5 hover:border-emerald-400 transition">
           <div class="flex items-center justify-between">
             <h3 class="font-black text-base text-slate-800">4. 流行海產餐廳（老船長現撈）</h3>
-            <a href="https://maps.google.com/?cid=304974119314629281" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-cyan-600 hover:underline flex items-center gap-1">
+            <a href="https://www.google.com/maps/search/?api=1&query=小琉球流行海產餐廳" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-cyan-600 hover:underline flex items-center gap-1">
               <i class="fa-solid fa-map-location-dot"></i> 導航
             </a>
           </div>
@@ -561,7 +624,7 @@
         <div class="bg-white border border-slate-200 rounded-xl p-3.5 shadow-sm space-y-1.5 hover:border-emerald-400 transition">
           <div class="flex items-center justify-between">
             <h3 class="font-black text-base text-slate-800">5. 大福羊肉海鮮店（羊肉海味）</h3>
-            <a href="https://maps.google.com/?cid=8125098097716243650" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-cyan-600 hover:underline flex items-center gap-1">
+            <a href="https://www.google.com/maps/search/?api=1&query=小琉球大福羊肉海鮮店" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-cyan-600 hover:underline flex items-center gap-1">
               <i class="fa-solid fa-map-location-dot"></i> 導航
             </a>
           </div>
@@ -572,7 +635,7 @@
         <div class="bg-white border border-slate-200 rounded-xl p-3.5 shadow-sm space-y-1.5 hover:border-emerald-400 transition">
           <div class="flex items-center justify-between">
             <h3 class="font-black text-base text-slate-800">6. 穀泰 Good Thai（泰式料理）</h3>
-            <a href="https://maps.google.com/?cid=13803311788857112202" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-cyan-600 hover:underline flex items-center gap-1">
+            <a href="https://www.google.com/maps/search/?api=1&query=小琉球穀泰GoodThai" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-cyan-600 hover:underline flex items-center gap-1">
               <i class="fa-solid fa-map-location-dot"></i> 導航
             </a>
           </div>
@@ -583,7 +646,7 @@
         <div class="bg-white border border-slate-200 rounded-xl p-3.5 shadow-sm space-y-1.5 hover:border-emerald-400 transition">
           <div class="flex items-center justify-between">
             <h3 class="font-black text-base text-slate-800">7. 相思麵（傳統柴燒古早味）</h3>
-            <a href="https://maps.google.com/?cid=5184444119151466244" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-cyan-600 hover:underline flex items-center gap-1">
+            <a href="https://www.google.com/maps/search/?api=1&query=小琉球相思麵" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-cyan-600 hover:underline flex items-center gap-1">
               <i class="fa-solid fa-map-location-dot"></i> 導航
             </a>
           </div>
@@ -594,7 +657,7 @@
         <div class="bg-white border border-slate-200 rounded-xl p-3.5 shadow-sm space-y-1.5 hover:border-emerald-400 transition">
           <div class="flex items-center justify-between">
             <h3 class="font-black text-base text-slate-800">8. 山豬溝餐館（炸物魚卵名店）</h3>
-            <a href="https://maps.google.com/?cid=10338730988826070632" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-cyan-600 hover:underline flex items-center gap-1">
+            <a href="https://www.google.com/maps/search/?api=1&query=小琉球山豬溝餐館" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-cyan-600 hover:underline flex items-center gap-1">
               <i class="fa-solid fa-map-location-dot"></i> 導航
             </a>
           </div>
@@ -605,7 +668,7 @@
         <div class="bg-white border border-slate-200 rounded-xl p-3.5 shadow-sm space-y-1.5 hover:border-emerald-400 transition">
           <div class="flex items-center justify-between">
             <h3 class="font-black text-base text-slate-800">9. 烏鬼洞6號-海濤客（海景老店）</h3>
-            <a href="https://maps.google.com/?cid=6687805396018797817" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-cyan-600 hover:underline flex items-center gap-1">
+            <a href="https://www.google.com/maps/search/?api=1&query=烏鬼洞6號海濤客" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-cyan-600 hover:underline flex items-center gap-1">
               <i class="fa-solid fa-map-location-dot"></i> 導航
             </a>
           </div>
@@ -616,7 +679,7 @@
         <div class="bg-white border border-slate-200 rounded-xl p-3.5 shadow-sm space-y-1.5 hover:border-emerald-400 transition">
           <div class="flex items-center justify-between">
             <h3 class="font-black text-base text-slate-800">10. 大頭-山海產（私房山海合菜）</h3>
-            <a href="https://maps.google.com/?cid=17762408073578857588" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-cyan-600 hover:underline flex items-center gap-1">
+            <a href="https://www.google.com/maps/search/?api=1&query=小琉球大頭山海產" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-cyan-600 hover:underline flex items-center gap-1">
               <i class="fa-solid fa-map-location-dot"></i> 導航
             </a>
           </div>
@@ -708,7 +771,7 @@
           <ul class="space-y-2 text-sm text-slate-600">
             <li class="flex items-start gap-2">
               <i class="fa-regular fa-square-check text-amber-500 mt-1"></i>
-              <span><strong class="text-rose-600">手電筒 / 頭燈（每人一支）</strong>：夜間導覽找陸蟹、棋盤腳花必備！</span>
+              <span><strong class="text-rose-600">手電筒 / 頭燈（每人一支）</strong>：19:50 天南民宿集合夜探陸蟹必備！</span>
             </li>
             <li class="flex items-start gap-2">
               <i class="fa-regular fa-square-check text-amber-500 mt-1"></i>
@@ -719,52 +782,6 @@
               <span><strong>防水束口袋 / 乾濕分離袋</strong>：裝濕泳衣水母衣不滲水。</span>
             </li>
           </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- 私密秘境景點 -->
-    <section id="secret" class="space-y-4 pt-4">
-      <div class="border-b border-slate-200 pb-3 flex items-center justify-between">
-        <h2 class="text-xl sm:text-2xl font-black text-slate-800 flex items-center gap-2">
-          <i class="fa-solid fa-compass text-cyan-600"></i>
-          小琉球私密秘境總整理
-        </h2>
-        <span class="text-xs text-slate-500">避開團客、安全好走</span>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm space-y-2">
-          <div class="flex items-center justify-between">
-            <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">制高點海景</span>
-            <a href="https://maps.google.com/?cid=6716075939217822093" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-cyan-600 hover:underline">導航</a>
-          </div>
-          <h3 class="font-black text-base text-slate-800">百年老榕樹秘境</h3>
-          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-            榕樹後方穿過平坦小徑步行僅 30 公尺，瞬間鳥瞰整個厚石裙礁與湛藍漸層海面，步道平緩幼童極好走！
-          </p>
-        </div>
-
-        <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm space-y-2">
-          <div class="flex items-center justify-between">
-            <span class="text-xs font-bold text-cyan-700 bg-cyan-100 px-2 py-0.5 rounded">天然海灣泳池</span>
-            <a href="https://maps.google.com/?cid=18047913867084561645" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-cyan-600 hover:underline">導航</a>
-          </div>
-          <h3 class="font-black text-base text-slate-800">厚石魚澳（天然港灣）</h3>
-          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-            外側天然礁岩阻絕大浪，內側水質清亮平靜如天然水池，人潮比花瓶岩少，退潮時小水窪充滿寄居蟹。
-          </p>
-        </div>
-
-        <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm space-y-2">
-          <div class="flex items-center justify-between">
-            <span class="text-xs font-bold text-orange-700 bg-orange-100 px-2 py-0.5 rounded">夕陽落日名所</span>
-            <a href="https://maps.google.com/?cid=14467027552599762199" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-cyan-600 hover:underline">導航</a>
-          </div>
-          <h3 class="font-black text-base text-slate-800">落日亭海景平台</h3>
-          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-            西側直面台灣海峽落日，晚霞粉橘絕美。具備無障礙寬敞木棧平台與涼亭，長輩幼兒能悠閒坐著吹海風。
-          </p>
         </div>
       </div>
     </section>
