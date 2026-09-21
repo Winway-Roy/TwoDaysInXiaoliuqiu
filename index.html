@@ -3,406 +3,632 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>小琉球 x 東港 2天1夜 親子歡樂海島遊</title>
+  <title>小琉球 ✕ 東港 2天1夜 親子歡樂海島遊</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap');
     body {
       font-family: 'Noto Sans TC', sans-serif;
       scroll-behavior: smooth;
     }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-cyan-200">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-cyan-200 pb-16">
 
-  <!-- 頂部導航 -->
-  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100">
-    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
-      <div class="flex items-center space-x-2 font-bold text-cyan-600 text-lg">
-        <i class="fa-solid fa-water"></i>
-        <span>小琉球・東港親子遊</span>
+  <!-- 頂部固定導航列 -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center space-x-2 font-black text-cyan-700 text-lg">
+        <i class="fa-solid fa-water text-xl"></i>
+        <span>小琉球 ✕ 東港親子遊</span>
       </div>
-      <nav class="hidden sm:flex space-x-6 text-sm font-medium text-slate-600">
-        <a href="#itinerary" class="hover:text-cyan-600 transition">行程一覽</a>
-        <a href="#checklist" class="hover:text-cyan-600 transition">共用行李</a>
-        <a href="#food" class="hover:text-cyan-600 transition">美食推薦</a>
-        <a href="#gifts" class="hover:text-cyan-600 transition">伴手禮物</a>
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-600">
+        <a href="#itinerary" class="hover:text-cyan-600 transition">行程表</a>
+        <a href="#checklist" class="hover:text-cyan-600 transition">行李清單</a>
+        <a href="#food" class="hover:text-cyan-600 transition">美食地圖</a>
+        <a href="#secret" class="hover:text-cyan-600 transition">私房秘境</a>
       </nav>
-      <button onclick="window.print()" class="text-xs sm:text-sm bg-cyan-600 hover:bg-cyan-700 text-white px-3 py-1.5 rounded-lg flex items-center gap-1.5 transition">
+      <button onclick="window.print()" class="text-xs bg-cyan-600 hover:bg-cyan-700 text-white px-3 py-1.5 rounded-lg flex items-center gap-1.5 transition shadow-sm">
         <i class="fa-solid fa-print"></i>
         <span>列印/轉PDF</span>
       </button>
     </div>
   </header>
 
-  <!-- 橫幅區塊 -->
-  <section class="bg-gradient-to-br from-cyan-600 via-teal-500 to-blue-600 text-white py-12 px-4">
-    <div class="max-w-4xl mx-auto text-center space-y-4">
-      <span class="inline-block bg-white/20 backdrop-blur-sm text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
-        2026.10.03 - 10.04 歡樂出團
+  <!-- 主視覺橫幅 -->
+  <section class="bg-gradient-to-br from-cyan-600 via-teal-600 to-blue-600 text-white py-10 px-4 shadow-inner">
+    <div class="max-w-4xl mx-auto text-center space-y-3">
+      <span class="inline-block bg-white/20 backdrop-blur-sm text-xs font-semibold px-3 py-1 rounded-full tracking-wider">
+        2026.10.03 – 10.04 歡樂出團
       </span>
-      <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">小琉球海龜共舞 ✕ 東港海上教堂巡禮</h1>
-      <p class="text-cyan-100 text-sm sm:text-base max-w-2xl mx-auto">
-        6 位大人 ＋ 3 位小朋友（3歲、5歲×2）專屬節奏！透明玻璃船、踏浪放電、大口吃海鮮烤肉的充實週末。
+      <h1 class="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight">
+        小琉球 ✕ 東港 2天1夜 親子歡樂海島遊
+      </h1>
+      <p class="text-sm sm:text-base text-cyan-100 max-w-xl mx-auto font-light">
+        6 大 3 小（3歲、5歲）大陣仗出遊！玻璃船看海龜、沙灘放電、西班牙海上教堂與華僑市場痛風海鮮全攻略！
       </p>
-      <!-- 快捷數據卡片 -->
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 max-w-3xl mx-auto text-slate-800">
-        <div class="bg-white/95 rounded-xl p-3 shadow-md">
-          <div class="text-xs text-slate-500">去程船票</div>
-          <div class="text-base font-bold text-cyan-700">10/03 10:00</div>
+
+      <!-- 快速資訊標籤 -->
+      <div class="pt-4 grid grid-cols-2 sm:grid-cols-4 gap-2.5 max-w-2xl mx-auto text-xs text-left">
+        <div class="bg-white/10 rounded-lg p-2.5 backdrop-blur-sm">
+          <div class="text-cyan-200">成員名單</div>
+          <div class="font-bold text-sm">6 大人 + 3 幼童</div>
         </div>
-        <div class="bg-white/95 rounded-xl p-3 shadow-md">
-          <div class="text-xs text-slate-500">機車租借</div>
-          <div class="text-base font-bold text-cyan-700">4 台機車</div>
+        <div class="bg-white/10 rounded-lg p-2.5 backdrop-blur-sm">
+          <div class="text-cyan-200">去程船票</div>
+          <div class="font-bold text-sm">10/3 10:00 東港發</div>
         </div>
-        <div class="bg-white/95 rounded-xl p-3 shadow-md">
-          <div class="text-xs text-slate-500">回程船票</div>
-          <div class="text-base font-bold text-cyan-700">10/04 14:00</div>
+        <div class="bg-white/10 rounded-lg p-2.5 backdrop-blur-sm">
+          <div class="text-cyan-200">租借機車</div>
+          <div class="font-bold text-sm">4 台機車 (11:00起)</div>
         </div>
-        <div class="bg-white/95 rounded-xl p-3 shadow-md">
-          <div class="text-xs text-slate-500">特別加開</div>
-          <div class="text-base font-bold text-cyan-700">東港咖啡+海產</div>
+        <div class="bg-white/10 rounded-lg p-2.5 backdrop-blur-sm">
+          <div class="text-cyan-200">回程船票</div>
+          <div class="font-bold text-sm">10/4 14:00 白沙尾</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 主要內容 -->
-  <main class="max-w-5xl mx-auto px-4 py-10 space-y-16">
+  <!-- 主要內容區 -->
+  <main class="max-w-4xl mx-auto px-4 py-8 space-y-12">
 
-    <!-- 行程表格區塊 -->
+    <!-- 行程表區塊 -->
     <section id="itinerary" class="space-y-8">
-      <div class="border-l-4 border-cyan-500 pl-4">
-        <h2 class="text-2xl font-bold text-slate-800">詳細行程規劃表</h2>
-        <p class="text-sm text-slate-500">配合小朋友放電與消化生理節奏，隨機調整最舒適</p>
+      <div class="border-b border-slate-200 pb-3 flex items-center justify-between">
+        <h2 class="text-xl sm:text-2xl font-black text-slate-800 flex items-center gap-2">
+          <i class="fa-solid fa-route text-cyan-600"></i>
+          詳細行程時間表
+        </h2>
+        <span class="text-xs text-slate-500">注意事項已整合於各項目下方</span>
       </div>
 
       <!-- DAY 1 -->
-      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
-        <div class="bg-gradient-to-r from-cyan-600 to-cyan-500 px-6 py-3.5 flex items-center justify-between text-white">
-          <div class="flex items-center gap-2">
-            <i class="fa-solid fa-sun text-yellow-300"></i>
-            <span class="font-bold tracking-wide">DAY 1 ｜ 2026 年 10 月 3 日（週六）小琉球跳島日</span>
-          </div>
-          <span class="text-xs bg-white/20 px-2 py-0.5 rounded">東港出發 ➔ 琉球探秘</span>
+      <div class="space-y-4">
+        <div class="flex items-center gap-2 bg-gradient-to-r from-cyan-700 to-teal-700 text-white px-4 py-2.5 rounded-xl shadow-sm">
+          <i class="fa-solid fa-calendar-day"></i>
+          <span class="font-bold text-base sm:text-lg">Day 1：10 月 3 日 (週六) 海島登陸 ✕ 踏浪放電日</span>
         </div>
-        <div class="overflow-x-auto">
-          <table class="w-full text-left text-sm">
-            <thead class="bg-slate-100/75 text-slate-600 border-b text-xs">
-              <tr>
-                <th class="py-3 px-4 w-32">時間</th>
-                <th class="py-3 px-4 w-44">活動項目</th>
-                <th class="py-3 px-4">地點 / 內容摘要</th>
-                <th class="py-3 px-4 w-60">貼心叮嚀</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-slate-100 text-slate-700">
-              <tr class="hover:bg-cyan-50/40 transition">
-                <td class="py-3 px-4 font-semibold text-slate-900">09:10 - 09:30</td>
-                <td class="py-3 px-4 font-medium text-cyan-700">碼頭報到取票</td>
-                <td class="py-3 px-4">東港東琉線聯營處碼頭集合</td>
-                <td class="py-3 px-4 text-xs text-slate-500">全員身分證/健保卡備齊取票；易暈船者此刻吃暈船藥</td>
-              </tr>
-              <tr class="hover:bg-cyan-50/40 transition bg-slate-50/50">
-                <td class="py-3 px-4 font-semibold text-slate-900">10:00 - 10:30</td>
-                <td class="py-3 px-4 font-medium text-cyan-700">搭乘交通船</td>
-                <td class="py-3 px-4">東港往白沙尾漁港（航程約 25–30 分鐘）</td>
-                <td class="py-3 px-4 text-xs text-slate-500">孩子靠內側坐好，欣賞港灣浪花海景</td>
-              </tr>
-              <tr class="hover:bg-cyan-50/40 transition">
-                <td class="py-3 px-4 font-semibold text-slate-900">10:40 - 11:20</td>
-                <td class="py-3 px-4 font-medium text-cyan-700">取機車 ➔ 寄行李</td>
-                <td class="py-3 px-4">碼頭車行取 4 台機車，前往民宿寄放隨身大件行李</td>
-                <td class="py-3 px-4 text-xs text-slate-500">檢查胎壓與剎車，幼兒乘坐確認防護安全</td>
-              </tr>
-              <tr class="hover:bg-cyan-50/40 transition bg-yellow-50/40">
-                <td class="py-3 px-4 font-semibold text-slate-900">11:30 - 12:40</td>
-                <td class="py-3 px-4 font-medium text-amber-700"><i class="fa-solid fa-utensils mr-1"></i>Day 1 午餐</td>
-                <td class="py-3 px-4 font-medium">大福羊肉海鮮店 / 穀泰泰式料理 / 相思麵</td>
-                <td class="py-3 px-4 text-xs text-slate-500">首選冷氣充足店家，吃飽休息避開正中午艷陽</td>
-              </tr>
-              <tr class="hover:bg-cyan-50/40 transition">
-                <td class="py-3 px-4 font-semibold text-slate-900">13:00 - 13:50</td>
-                <td class="py-3 px-4 font-medium text-cyan-700">半潛艇玻璃船</td>
-                <td class="py-3 px-4">白沙尾港碼頭乘船，冷氣下層船艙觀覽</td>
-                <td class="py-3 px-4 text-xs text-slate-500">免下水、免穿泳衣，近距離從水下視角找綠蠵龜與珊瑚礁</td>
-              </tr>
-              <tr class="hover:bg-cyan-50/40 transition bg-cyan-50/30">
-                <td class="py-3 px-4 font-semibold text-slate-900">14:00 - 14:40</td>
-                <td class="py-3 px-4 font-medium text-blue-600"><i class="fa-solid fa-ice-cream mr-1"></i>清涼吃冰消暑</td>
-                <td class="py-3 px-4">旺昌冰舖 / 冰箱冰舖</td>
-                <td class="py-3 px-4 text-xs text-slate-500">下船直接吃冰！先解渴降溫，留 2 小時讓小朋友玩水消化</td>
-              </tr>
-              <tr class="hover:bg-cyan-50/40 transition">
-                <td class="py-3 px-4 font-semibold text-slate-900">14:50 - 15:30</td>
-                <td class="py-3 px-4 font-medium text-cyan-700">Check-in 換裝</td>
-                <td class="py-3 px-4">民宿領房卡入房，換上泳裝/水母衣、擦防曬乳</td>
-                <td class="py-3 px-4 text-xs text-slate-500">帶齊大毛巾、手機防水袋與水壺</td>
-              </tr>
-              <tr class="hover:bg-cyan-50/40 transition bg-blue-50/40">
-                <td class="py-3 px-4 font-semibold text-slate-900">15:30 - 17:30</td>
-                <td class="py-3 px-4 font-medium text-blue-700"><i class="fa-solid fa-person-swimming mr-1"></i>獨木舟+踏浪</td>
-                <td class="py-3 px-4">中澳沙灘 或 大福西沙灘</td>
-                <td class="py-3 px-4 text-xs text-slate-500">傍晚微風溫和！大人划獨木舟，幼兒在平緩淺灘玩沙踩水</td>
-              </tr>
-              <tr class="hover:bg-cyan-50/40 transition">
-                <td class="py-3 px-4 font-semibold text-slate-900">17:30 - 18:15</td>
-                <td class="py-3 px-4 font-medium text-cyan-700">民宿盥洗換裝</td>
-                <td class="py-3 px-4">回民宿沖洗溫水澡、換乾淨便服</td>
-                <td class="py-3 px-4 text-xs text-slate-500">玩水放電結束，此時肚子剛好徹底消化飢腸轆轆</td>
-              </tr>
-              <tr class="hover:bg-cyan-50/40 transition bg-orange-50/40">
-                <td class="py-3 px-4 font-semibold text-slate-900">18:30 - 20:00</td>
-                <td class="py-3 px-4 font-medium text-orange-700"><i class="fa-solid fa-fire-burner mr-1"></i>BBQ 烤肉晚餐</td>
-                <td class="py-3 px-4 font-medium">預約烤肉吃到飽餐廳入場</td>
-                <td class="py-3 px-4 text-xs text-slate-500">注意孩童與炭火距離；肉品、海鮮熟透再給小孩食用</td>
-              </tr>
-              <tr class="hover:bg-cyan-50/40 transition">
-                <td class="py-3 px-4 font-semibold text-slate-900">20:00 - 21:30</td>
-                <td class="py-3 px-4 font-medium text-emerald-700"><i class="fa-solid fa-moon mr-1"></i>夜間生態導覽</td>
-                <td class="py-3 px-4">民宿門口/指定集合點出發（專人帶隊）</td>
-                <td class="py-3 px-4 text-xs text-slate-500">噴防蚊液！尋訪夜間綻放的棋盤腳、野生陸蟹與繁星</td>
-              </tr>
-              <tr class="hover:bg-cyan-50/40 transition">
-                <td class="py-3 px-4 font-semibold text-slate-900">21:30 ~</td>
-                <td class="py-3 px-4 font-medium text-slate-700">消夜 / 休息</td>
-                <td class="py-3 px-4">廟口鹹酥雞 / 86鹽酥雞 / 散步回房</td>
-                <td class="py-3 px-4 text-xs text-slate-500">充實放電一整天，讓小寶貝早點入睡</td>
-              </tr>
-            </tbody>
-          </table>
+
+        <div class="space-y-3">
+          <!-- 項目 1 -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
+              <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
+                <i class="fa-regular fa-clock"></i> 09:10 - 09:30
+              </span>
+              <h3 class="font-black text-base sm:text-lg text-slate-800">東港碼頭報到 ➔ 準備登船</h3>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 w-fit">東港東琉線碼頭</span>
+            </div>
+            <!-- 貼心叮嚀 -->
+            <div class="mt-2.5 bg-amber-50 border-l-4 border-amber-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-amber-900 leading-relaxed">
+              <span class="font-bold">⚠️ 貼心叮嚀：</span>
+              假日人潮多，需提早 30 分鐘取票排隊。請隨身備妥全員健保卡與身分證查驗。
+            </div>
+          </div>
+
+          <!-- 項目 2 -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
+              <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
+                <i class="fa-regular fa-clock"></i> 10:00 - 10:30
+              </span>
+              <h3 class="font-black text-base sm:text-lg text-slate-800">搭乘交通船前往小琉球</h3>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 w-fit">東港往白沙尾漁港</span>
+            </div>
+            <div class="mt-2.5 bg-amber-50 border-l-4 border-amber-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-amber-900 leading-relaxed">
+              <span class="font-bold">⚠️ 貼心叮嚀：</span>
+              航程約 25–30 分鐘，容易暈船者（大人小孩專用劑型）務必於 09:30 上船前半小時先吃暈船藥。
+            </div>
+          </div>
+
+          <!-- 項目 3 -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
+              <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
+                <i class="fa-regular fa-clock"></i> 10:40 - 11:20
+              </span>
+              <h3 class="font-black text-base sm:text-lg text-slate-800">車行取機車 ➔ 民宿寄放隨身行李</h3>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 w-fit">碼頭車行 ➔ 民宿</span>
+            </div>
+            <div class="mt-2.5 bg-blue-50 border-l-4 border-blue-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-blue-900 leading-relaxed">
+              <span class="font-bold">🛵 貼心叮嚀：</span>
+              領取 4 台機車，3 歲與 5 歲幼童請大人妥善夾坐照顧，島上騎乘注意路面起伏減速慢行。
+            </div>
+          </div>
+
+          <!-- 項目 4 -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
+              <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
+                <i class="fa-regular fa-clock"></i> 11:30 - 12:40
+              </span>
+              <h3 class="font-black text-base sm:text-lg text-slate-800">Day 1 海島午餐饗宴</h3>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 w-fit">大福羊肉 / 穀泰 / 相思麵</span>
+            </div>
+            <div class="mt-2.5 bg-emerald-50 border-l-4 border-emerald-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-emerald-900 leading-relaxed">
+              <span class="font-bold">🍽️ 貼心叮嚀：</span>
+              熱門餐廳提早登記或抽號，建議挑選室內有冷氣店家，讓小朋友好好吹冷氣、補充能量。
+            </div>
+          </div>
+
+          <!-- 項目 5 -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
+              <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
+                <i class="fa-regular fa-clock"></i> 13:00 - 13:50
+              </span>
+              <h3 class="font-black text-base sm:text-lg text-slate-800">半潛艇玻璃船（免濕身探險）</h3>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 w-fit">白沙尾港旁碼頭出發</span>
+            </div>
+            <div class="mt-2.5 bg-cyan-50 border-l-4 border-cyan-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-cyan-900 leading-relaxed">
+              <span class="font-bold">🐢 貼心叮嚀：</span>
+              不用沾濕衣服！坐在下層空調船艙玻璃窗前，零距離觀察綠蠵龜、熱帶魚群與珊瑚礁生態。
+            </div>
+          </div>
+
+          <!-- 項目 6 -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
+              <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
+                <i class="fa-regular fa-clock"></i> 14:00 - 14:40
+              </span>
+              <h3 class="font-black text-base sm:text-lg text-slate-800">上岸消暑吃冰品</h3>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 w-fit">旺昌冰舖 / 冰箱冰舖</span>
+            </div>
+            <div class="mt-2.5 bg-pink-50 border-l-4 border-pink-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-pink-900 leading-relaxed">
+              <span class="font-bold">🍧 貼心叮嚀：</span>
+              玻璃船結束直接吃冰降溫！芒果雪花冰、焦糖挫冰超消暑，吃完剛好在接下來的玩水行程完全消化！
+            </div>
+          </div>
+
+          <!-- 項目 7 -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
+              <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
+                <i class="fa-regular fa-clock"></i> 14:50 - 15:30
+              </span>
+              <h3 class="font-black text-base sm:text-lg text-slate-800">民宿 Check-in ➔ 著裝準備玩水</h3>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 w-fit">下榻民宿</span>
+            </div>
+            <div class="mt-2.5 bg-blue-50 border-l-4 border-blue-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-blue-900 leading-relaxed">
+              <span class="font-bold">🏊 貼心叮嚀：</span>
+              換上水母衣或泳衣，擦上海洋友善防曬乳，手機裝入防水套，準備午後水上大冒險！
+            </div>
+          </div>
+
+          <!-- 項目 8 -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
+              <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
+                <i class="fa-regular fa-clock"></i> 15:30 - 17:30
+              </span>
+              <h3 class="font-black text-base sm:text-lg text-slate-800">獨木舟體驗 ✕ 岸邊踏浪玩沙</h3>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 w-fit">中澳沙灘 / 大福西沙灘</span>
+            </div>
+            <div class="mt-2.5 bg-cyan-50 border-l-4 border-cyan-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-cyan-900 leading-relaxed">
+              <span class="font-bold">🚣 貼心叮嚀：</span>
+              傍晚太陽溫和、海水舒服！大人體驗獨木舟划向外海，幼童在平緩岸邊玩沙踩水，徹底放電、消耗熱量。
+            </div>
+          </div>
+
+          <!-- 項目 9 -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
+              <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
+                <i class="fa-regular fa-clock"></i> 17:30 - 18:15
+              </span>
+              <h3 class="font-black text-base sm:text-lg text-slate-800">民宿舒適盥洗換裝</h3>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 w-fit">下榻民宿</span>
+            </div>
+            <div class="mt-2.5 bg-slate-50 border-l-4 border-slate-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-slate-700 leading-relaxed">
+              <span class="font-bold">🚿 貼心叮嚀：</span>
+              沖個溫水澡、換上乾爽衣服，下午吃的冰已經完全消化，肚子咕嚕嚕準備吃大餐！
+            </div>
+          </div>
+
+          <!-- 項目 10 -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
+              <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
+                <i class="fa-regular fa-clock"></i> 18:30 - 20:00
+              </span>
+              <h3 class="font-black text-base sm:text-lg text-slate-800">島風 BBQ 烤肉吃到飽</h3>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 w-fit">預訂烤肉餐廳 (18:00~18:30進場)</span>
+            </div>
+            <div class="mt-2.5 bg-rose-50 border-l-4 border-rose-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-rose-900 leading-relaxed">
+              <span class="font-bold">🥩 貼心叮嚀：</span>
+              鮮蚵海鮮肉品爽快吃到飽！炭火煙燻環境請隨時照看 3 歲與 5 歲小朋友的走動安全。
+            </div>
+          </div>
+
+          <!-- 項目 11 -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
+              <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
+                <i class="fa-regular fa-clock"></i> 20:00 - 21:30
+              </span>
+              <h3 class="font-black text-base sm:text-lg text-slate-800">夜間陸域生態導覽</h3>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 w-fit">導覽員指定集合點</span>
+            </div>
+            <div class="mt-2.5 bg-purple-50 border-l-4 border-purple-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-purple-900 leading-relaxed">
+              <span class="font-bold">🦀 貼心叮嚀：</span>
+              夜間探索棋盤腳開花奇景、尋找夜行性陸蟹與觀星。戶外草叢多，請務必幫孩子噴妥防蚊液並穿薄長褲。
+            </div>
+          </div>
+
+          <!-- 項目 12 -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
+              <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
+                <i class="fa-regular fa-clock"></i> 21:30 ~
+              </span>
+              <h3 class="font-black text-base sm:text-lg text-slate-800">消夜點心 ➔ 回房充足休息</h3>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 w-fit">廟口鹹酥雞 / 86鹹酥雞</span>
+            </div>
+            <div class="mt-2.5 bg-slate-50 border-l-4 border-slate-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-slate-700 leading-relaxed">
+              <span class="font-bold">🌙 貼心叮嚀：</span>
+              買份酥脆鹹酥雞回民宿小酌放鬆，早點哄睡小朋友，儲備明早海景玩水的滿滿活力！
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- DAY 2 -->
-      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
-        <div class="bg-gradient-to-r from-teal-600 to-teal-500 px-6 py-3.5 flex items-center justify-between text-white">
-          <div class="flex items-center gap-2">
-            <i class="fa-solid fa-compass text-yellow-300"></i>
-            <span class="font-bold tracking-wide">DAY 2 ｜ 2026 年 10 月 4 日（週日）琉球美景 ➔ 東港巡禮</span>
-          </div>
-          <span class="text-xs bg-white/20 px-2 py-0.5 rounded">早晨踏浪 ➔ 午後東港</span>
+      <div class="space-y-4 pt-6">
+        <div class="flex items-center gap-2 bg-gradient-to-r from-teal-700 to-cyan-700 text-white px-4 py-2.5 rounded-xl shadow-sm">
+          <i class="fa-solid fa-calendar-day"></i>
+          <span class="font-bold text-base sm:text-lg">Day 2：10 月 4 日 (週日) 晨光玩水 ✕ 洞穴步道 ✕ 東港盛宴</span>
         </div>
-        <div class="overflow-x-auto">
-          <table class="w-full text-left text-sm">
-            <thead class="bg-slate-100/75 text-slate-600 border-b text-xs">
-              <tr>
-                <th class="py-3 px-4 w-32">時間</th>
-                <th class="py-3 px-4 w-44">活動項目</th>
-                <th class="py-3 px-4">地點 / 內容摘要</th>
-                <th class="py-3 px-4 w-60">貼心叮嚀</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-slate-100 text-slate-700">
-              <tr class="hover:bg-teal-50/40 transition bg-amber-50/30">
-                <td class="py-3 px-4 font-semibold text-slate-900">07:40 - 08:45</td>
-                <td class="py-3 px-4 font-medium text-amber-800"><i class="fa-solid fa-mug-saucer mr-1"></i>特色活力早餐</td>
-                <td class="py-3 px-4">洪媽媽早餐店 / 郵局對面蔥油條</td>
-                <td class="py-3 px-4 text-xs text-slate-500">必吃琉球粿、賓士包、香腸碗粿；派代表外帶回民宿最悠閒</td>
-              </tr>
-              <tr class="hover:bg-teal-50/40 transition bg-cyan-50/40">
-                <td class="py-3 px-4 font-semibold text-slate-900">09:00 - 10:00</td>
-                <td class="py-3 px-4 font-medium text-cyan-800"><i class="fa-solid fa-camera mr-1"></i>晨光美景+玩水</td>
-                <td class="py-3 px-4 font-medium">花瓶岩 (首選) 或 厚石魚澳天然泳池</td>
-                <td class="py-3 px-4 text-xs text-slate-500">早晨水質最透澈！岸邊水深只到小腿，近距離看海龜探頭換氣</td>
-              </tr>
-              <tr class="hover:bg-teal-50/40 transition">
-                <td class="py-3 px-4 font-semibold text-slate-900">10:00 - 11:00</td>
-                <td class="py-3 px-4 font-medium text-teal-700">盥洗 ➔ 辦理退房</td>
-                <td class="py-3 px-4">回民宿舒洗、打包行李辦理退房</td>
-                <td class="py-3 px-4 text-xs text-slate-500">行李集中寄放大廳或直接帶到港口車行</td>
-              </tr>
-              <tr class="hover:bg-teal-50/40 transition bg-amber-50/40">
-                <td class="py-3 px-4 font-semibold text-slate-900">11:30 - 12:30</td>
-                <td class="py-3 px-4 font-medium text-amber-700"><i class="fa-solid fa-bowl-rice mr-1"></i>Day 2 港口午餐</td>
-                <td class="py-3 px-4">碼頭老街海產店 / 達美樂商圈熱炒</td>
-                <td class="py-3 px-4 text-xs text-slate-500">品嚐炒海菜、飛魚卵炒飯、鮮魚湯</td>
-              </tr>
-              <tr class="hover:bg-teal-50/40 transition">
-                <td class="py-3 px-4 font-semibold text-slate-900">12:40 - 13:20</td>
-                <td class="py-3 px-4 font-medium text-emerald-700"><i class="fa-solid fa-tree mr-1"></i>午後消食洞穴散步</td>
-                <td class="py-3 px-4 font-medium">山豬溝生態步道 或 美人洞</td>
-                <td class="py-3 px-4 text-xs text-slate-500">首選山豬溝：綠蔭濃密遮陽、木棧道平緩，帶 3 歲幼兒最好走</td>
-              </tr>
-              <tr class="hover:bg-teal-50/40 transition">
-                <td class="py-3 px-4 font-semibold text-slate-900">13:20 - 13:50</td>
-                <td class="py-3 px-4 font-medium text-purple-700"><i class="fa-solid fa-bag-shopping mr-1"></i>免稅店採買</td>
-                <td class="py-3 px-4">澎坊免稅店（白沙尾港旁）</td>
-                <td class="py-3 px-4 text-xs text-slate-500">室內強冷氣！採購免稅美妝、精品與麻花捲名產</td>
-              </tr>
-              <tr class="hover:bg-teal-50/40 transition">
-                <td class="py-3 px-4 font-semibold text-slate-900">13:50 - 14:00</td>
-                <td class="py-3 px-4 font-medium text-teal-700">歸還機車 ➔ 候船</td>
-                <td class="py-3 px-4">港口車行還車（延後1小時結算）</td>
-                <td class="py-3 px-4 text-xs text-slate-500">清點伴手禮與全部行李，前往登船口</td>
-              </tr>
-              <tr class="hover:bg-teal-50/40 transition bg-slate-50/50">
-                <td class="py-3 px-4 font-semibold text-slate-900">14:00 - 14:30</td>
-                <td class="py-3 px-4 font-medium text-teal-700">搭船返回東港</td>
-                <td class="py-3 px-4">白沙尾港往東港碼頭</td>
-                <td class="py-3 px-4 text-xs text-slate-500">吹著海風小憩，結束小琉球離島之旅</td>
-              </tr>
 
-              <!-- 東港延伸特別行程 -->
-              <tr class="bg-indigo-50/60 hover:bg-indigo-50 transition border-t-2 border-indigo-200">
-                <td class="py-3 px-4 font-semibold text-indigo-950">15:00 - 16:15</td>
-                <td class="py-3 px-4 font-medium text-indigo-800"><i class="fa-solid fa-church mr-1"></i>海上教堂咖啡</td>
-                <td class="py-3 px-4 font-medium text-indigo-950">Maritime Building（海上教堂咖啡）</td>
-                <td class="py-3 px-4 text-xs text-indigo-700">全台唯一海上歐風教堂！吹冷氣看無敵海景、品嚐精緻千層蛋糕</td>
-              </tr>
-              <tr class="bg-indigo-50/60 hover:bg-indigo-50 transition">
-                <td class="py-3 px-4 font-semibold text-indigo-950">16:25 - 17:30</td>
-                <td class="py-3 px-4 font-medium text-indigo-800"><i class="fa-solid fa-child-reaching mr-1"></i>大鮪魚公園放電</td>
-                <td class="py-3 px-4 font-medium text-indigo-950">大鮪魚航海樂園（東港兒童公園）</td>
-                <td class="py-3 px-4 text-xs text-indigo-700">傍晚溫和不曬！11米巨型溜滑梯、沙坑共融遊戲場，讓小孩徹底放電</td>
-              </tr>
-              <tr class="bg-indigo-50/60 hover:bg-indigo-50 transition">
-                <td class="py-3 px-4 font-semibold text-indigo-950">17:40 - 19:00</td>
-                <td class="py-3 px-4 font-medium text-indigo-800"><i class="fa-solid fa-fish mr-1"></i>華僑市場海鮮宴</td>
-                <td class="py-3 px-4 font-medium text-indigo-950">Huaqiao Fish Market（華僑市場）</td>
-                <td class="py-3 px-4 text-xs text-indigo-700">現切黑鮪魚、代煮大明蝦與蛤蜊、現炸包蛋旗魚黑輪，滿足賦歸！</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="space-y-3">
+          <!-- 項目 1 -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
+              <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
+                <i class="fa-regular fa-clock"></i> 07:40 - 08:45
+              </span>
+              <h3 class="font-black text-base sm:text-lg text-slate-800">特色早點：超人氣早餐派對</h3>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 w-fit">洪媽媽早餐店 / 郵局蔥油條</span>
+            </div>
+            <div class="mt-2.5 bg-amber-50 border-l-4 border-amber-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-amber-900 leading-relaxed">
+              <span class="font-bold">🥐 貼心叮嚀：</span>
+              必點琉球粿、香腸碗粿、賓士包。排隊人潮較多，建議派 2 位大人騎車外帶回民宿房間舒服吹冷氣享用。
+            </div>
+          </div>
+
+          <!-- 項目 2 -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
+              <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
+                <i class="fa-regular fa-clock"></i> 09:00 - 10:00
+              </span>
+              <h3 class="font-black text-base sm:text-lg text-slate-800">絕美海景 ✕ 晨間踏浪尋龜</h3>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 w-fit">花瓶岩 (首選) 或厚石魚澳</span>
+            </div>
+            <div class="mt-2.5 bg-cyan-50 border-l-4 border-cyan-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-cyan-900 leading-relaxed">
+              <span class="font-bold">🌊 貼心叮嚀：</span>
+              早晨順光海水極度透明！水深僅至小腿，適合孩子踩水、堆沙。站在岸邊經常能直接看到綠蠵龜探頭換氣！
+            </div>
+          </div>
+
+          <!-- 項目 3 -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
+              <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
+                <i class="fa-regular fa-clock"></i> 10:00 - 11:00
+              </span>
+              <h3 class="font-black text-base sm:text-lg text-slate-800">回民宿沖洗盥洗 ➔ 退房寄物</h3>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 w-fit">下榻民宿</span>
+            </div>
+            <div class="mt-2.5 bg-blue-50 border-l-4 border-blue-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-blue-900 leading-relaxed">
+              <span class="font-bold">🧳 貼心叮嚀：</span>
+              在民宿舒舒服服沖溫水澡、換上外出服。行李打包好辦理退房，行李可寄放大廳或直接送往港口車行保管。
+            </div>
+          </div>
+
+          <!-- 項目 4 -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
+              <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
+                <i class="fa-regular fa-clock"></i> 11:30 - 12:30
+              </span>
+              <h3 class="font-black text-base sm:text-lg text-slate-800">Day 2 碼頭老街海味午餐</h3>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 w-fit">白沙尾老街 / 達美樂周邊海產店</span>
+            </div>
+            <div class="mt-2.5 bg-emerald-50 border-l-4 border-emerald-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-emerald-900 leading-relaxed">
+              <span class="font-bold">🐟 貼心叮嚀：</span>
+              選港口附近餐廳最方便，炒野生海菜、飛魚卵炒飯、鮮魚湯口味鮮甜，吃飽剛好銜接午後散步。
+            </div>
+          </div>
+
+          <!-- 項目 5 -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
+              <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
+                <i class="fa-regular fa-clock"></i> 12:40 - 13:20
+              </span>
+              <h3 class="font-black text-base sm:text-lg text-slate-800">午後散步：地質洞穴綠蔭探險</h3>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 w-fit">山豬溝 (首推) 或美人洞</span>
+            </div>
+            <div class="mt-2.5 bg-emerald-50 border-l-4 border-emerald-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-emerald-900 leading-relaxed">
+              <span class="font-bold">🌿 貼心叮嚀：</span>
+              吃飽飯散步消化！**首選山豬溝**：高聳熱帶樹冠遮蔭極佳，木棧道平緩少階梯，3 歲與 5 歲幼童走起來安全不費力。
+            </div>
+          </div>
+
+          <!-- 項目 6 -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
+              <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
+                <i class="fa-regular fa-clock"></i> 13:20 - 13:50
+              </span>
+              <h3 class="font-black text-base sm:text-lg text-slate-800">免稅店吹冷氣採買 ➔ 還車集結</h3>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 w-fit">澎坊免稅店 ➔ 港口車行</span>
+            </div>
+            <div class="mt-2.5 bg-indigo-50 border-l-4 border-indigo-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-indigo-900 leading-relaxed">
+              <span class="font-bold">🛍️ 貼心叮嚀：</span>
+              免稅店採買提貨（大人出示身分證船票購買菸酒保養品）。機車延後 1 小時剛好於 13:50 前完成歸還。
+            </div>
+          </div>
+
+          <!-- 項目 7 -->
+          <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:border-cyan-400 transition">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-slate-100">
+              <span class="text-sm font-bold text-cyan-700 flex items-center gap-1.5">
+                <i class="fa-regular fa-clock"></i> 14:00 - 14:30
+              </span>
+              <h3 class="font-black text-base sm:text-lg text-slate-800">搭乘交通船返抵東港</h3>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-slate-100 text-slate-600 w-fit">白沙尾港往東港碼頭</span>
+            </div>
+            <div class="mt-2.5 bg-amber-50 border-l-4 border-amber-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-amber-900 leading-relaxed">
+              <span class="font-bold">⚠️ 貼心叮嚀：</span>
+              13:30 登船前半小時請記得讓小朋友與易暈船大人服用暈船藥，依序排隊登船。
+            </div>
+          </div>
+
+          <!-- 項目 8 (東港延伸行程) -->
+          <div class="bg-gradient-to-br from-amber-50 to-orange-50 border-2 border-orange-200 rounded-xl p-4 shadow-sm">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-orange-200">
+              <span class="text-sm font-bold text-orange-700 flex items-center gap-1.5">
+                <i class="fa-regular fa-clock"></i> 15:00 - 16:15
+              </span>
+              <h3 class="font-black text-base sm:text-lg text-orange-900">海上教堂咖啡 Maritime Building</h3>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-orange-100 text-orange-800 w-fit">大鵬灣風景區</span>
+            </div>
+            <div class="mt-2.5 bg-white/80 border-l-4 border-orange-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-orange-950 leading-relaxed">
+              <span class="font-bold">☕ 貼心叮嚀：</span>
+              全台唯一海上西班牙粉紅教堂！吹強冷氣、喝手沖下午茶、吃千層蛋糕，窗外無敵海景超好拍！
+            </div>
+          </div>
+
+          <!-- 項目 9 (東港延伸行程) -->
+          <div class="bg-gradient-to-br from-amber-50 to-orange-50 border-2 border-orange-200 rounded-xl p-4 shadow-sm">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-orange-200">
+              <span class="text-sm font-bold text-orange-700 flex items-center gap-1.5">
+                <i class="fa-regular fa-clock"></i> 16:25 - 17:30
+              </span>
+              <h3 class="font-black text-base sm:text-lg text-orange-900">大鮪魚航海樂園（東港兒童公園）</h3>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-orange-100 text-orange-800 w-fit">距市區 5 分鐘車程</span>
+            </div>
+            <div class="mt-2.5 bg-white/80 border-l-4 border-orange-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-orange-950 leading-relaxed">
+              <span class="font-bold">🎪 貼心叮嚀：</span>
+              傍晚不曬最舒適！11米巨型鮪魚溜滑梯、低矮爬網與共融沙坑，讓 3 歲與 5 歲小孩把最後電力放光，回程車上秒睡！
+            </div>
+          </div>
+
+          <!-- 項目 10 (東港延伸行程) -->
+          <div class="bg-gradient-to-br from-amber-50 to-orange-50 border-2 border-orange-200 rounded-xl p-4 shadow-sm">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 pb-2 border-b border-orange-200">
+              <span class="text-sm font-bold text-orange-700 flex items-center gap-1.5">
+                <i class="fa-regular fa-clock"></i> 17:40 - 19:00
+              </span>
+              <h3 class="font-black text-base sm:text-lg text-orange-900">華僑市場海鮮大饗宴 ➔ 滿載賦歸</h3>
+              <span class="text-xs font-semibold px-2 py-0.5 rounded bg-orange-100 text-orange-800 w-fit">東港華僑市場</span>
+            </div>
+            <div class="mt-2.5 bg-white/80 border-l-4 border-orange-400 p-2.5 rounded-r-lg text-xs sm:text-sm text-orange-950 leading-relaxed">
+              <span class="font-bold">🍣 貼心叮嚀：</span>
+              現切黑鮪魚金三角、代客料理鮮蝦大蛤蜊、現炸正宗旗魚黑輪。吃飽喝足，心滿意足啟程回家！
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- 通用隨身行李清單 -->
-    <section id="checklist" class="space-y-6">
-      <div class="border-l-4 border-emerald-500 pl-4">
-        <h2 class="text-2xl font-bold text-slate-800">全員通用隨身清單</h2>
-        <p class="text-sm text-slate-500">已扣除私人衣物與幼兒奶粉等個人品，其餘重要必備品</p>
+    <!-- 通用行李清單 -->
+    <section id="checklist" class="space-y-4 pt-4">
+      <div class="border-b border-slate-200 pb-3 flex items-center justify-between">
+        <h2 class="text-xl sm:text-2xl font-black text-slate-800 flex items-center gap-2">
+          <i class="fa-solid fa-suitcase text-cyan-600"></i>
+          隨身與共用行李清單
+        </h2>
+        <span class="text-xs text-slate-500">自家衣物奶粉已除外</span>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-        <!-- 卡片 1 -->
-        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
-          <div class="flex items-center gap-2 text-emerald-600 font-bold">
-            <i class="fa-solid fa-id-card"></i>
-            <h3>身分證件組</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm space-y-3">
+          <div class="flex items-center gap-2 font-bold text-slate-800 text-base border-b border-slate-100 pb-2">
+            <i class="fa-solid fa-id-card text-cyan-600"></i>
+            <span>重要證件組</span>
           </div>
-          <ul class="text-xs space-y-2 text-slate-600">
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i><span>全體健保卡（9位搭船、看診必備）</span></li>
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i><span>機車駕照（至少準備4張大人駕照）</span></li>
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-emerald-500 mt-0.5"></i><span>大人身分證件正本</span></li>
-          </ul>
-        </div>
-        <!-- 卡片 2 -->
-        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
-          <div class="flex items-center gap-2 text-cyan-600 font-bold">
-            <i class="fa-solid fa-umbrella-beach"></i>
-            <h3>水上與防曬組</h3>
-          </div>
-          <ul class="text-xs space-y-2 text-slate-600">
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-cyan-500 mt-0.5"></i><span>薄長袖防曬外套、遮陽帽</span></li>
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-cyan-500 mt-0.5"></i><span>溯溪鞋 / 護趾涼鞋（防礁石刮傷）</span></li>
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-cyan-500 mt-0.5"></i><span>海洋友善防曬乳（下水前建議物理防曬）</span></li>
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-cyan-500 mt-0.5"></i><span>手機防水袋（獨木舟必備）</span></li>
-          </ul>
-        </div>
-        <!-- 卡片 3 -->
-        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
-          <div class="flex items-center gap-2 text-rose-600 font-bold">
-            <i class="fa-solid fa-briefcase-medical"></i>
-            <h3>醫藥防護組</h3>
-          </div>
-          <ul class="text-xs space-y-2 text-slate-600">
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-rose-500 mt-0.5"></i><span>暈船藥（大人與兒童劑型）</span></li>
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-rose-500 mt-0.5"></i><span>防蚊液 / 止癢膏（夜間導覽必備）</span></li>
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-rose-500 mt-0.5"></i><span>透氣防水 OK 繃、小瓶生理食鹽水</span></li>
-          </ul>
-        </div>
-        <!-- 卡片 4 -->
-        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
-          <div class="flex items-center gap-2 text-amber-600 font-bold">
-            <i class="fa-solid fa-battery-three-quarters"></i>
-            <h3>隨身通用電裝</h3>
-          </div>
-          <ul class="text-xs space-y-2 text-slate-600">
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-amber-500 mt-0.5"></i><span>大容量行動電源與充電線</span></li>
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-amber-500 mt-0.5"></i><span>乾濕分離防水收納袋</span></li>
-            <li class="flex items-start gap-1.5"><i class="fa-solid fa-check text-amber-500 mt-0.5"></i><span>吸水大浴巾數條（玩水擦身防風吹著涼）</span></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- 美食名單 -->
-    <section id="food" class="space-y-6">
-      <div class="border-l-4 border-amber-500 pl-4">
-        <h2 class="text-2xl font-bold text-slate-800">島上與東港必吃美食地圖</h2>
-        <p class="text-sm text-slate-500">大人吃得澎湃、小朋友也能吃得開心</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- 小琉球正餐 -->
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3">
-          <div class="flex items-center gap-2 text-amber-600 font-bold text-base">
-            <i class="fa-solid fa-utensils"></i>
-            <span>小琉球午餐推薦</span>
-          </div>
-          <ul class="text-sm space-y-2.5 text-slate-600">
-            <li><strong>大福羊肉海鮮店</strong>：招牌羊排酥、炒海菜，肉質嫩無羶味。</li>
-            <li><strong>穀泰 Good Thai 泰式餐飲</strong>：環境舒適有冷氣，打拋豬與泰奶超地道。</li>
-            <li><strong>相思麵</strong>：柴燒肉燥乾麵、自製辣醬與小琉球傳統炸丸子。</li>
+          <ul class="space-y-2 text-sm text-slate-600">
+            <li class="flex items-start gap-2">
+              <i class="fa-regular fa-square-check text-cyan-600 mt-1"></i>
+              <span><strong>全體健保卡（9張）</strong>：小琉球取船票、就醫必備。</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-regular fa-square-check text-cyan-600 mt-1"></i>
+              <span><strong>機車駕照（4張）</strong>：租借 4 台機車身分登記用。</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-regular fa-square-check text-cyan-600 mt-1"></i>
+              <span><strong>身分證</strong>：成人免稅店採買保養品/菸酒必備。</span>
+            </li>
           </ul>
         </div>
 
-        <!-- 小琉球早餐與甜品 -->
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3">
-          <div class="flex items-center gap-2 text-cyan-600 font-bold text-base">
-            <i class="fa-solid fa-bowl-food"></i>
-            <span>早餐與消暑冰品</span>
+        <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm space-y-3">
+          <div class="flex items-center gap-2 font-bold text-slate-800 text-base border-b border-slate-100 pb-2">
+            <i class="fa-solid fa-person-swimming text-cyan-600"></i>
+            <span>水上活動與防護</span>
           </div>
-          <ul class="text-sm space-y-2.5 text-slate-600">
-            <li><strong>洪媽媽早餐店</strong>：必點琉球粿、香腸碗粿、三角賓士包（黑糖流心）。</li>
-            <li><strong>郵局蔥油條</strong>：外酥內軟，在地特色早點。</li>
-            <li><strong>旺昌冰舖 / 冰箱冰舖</strong>：新鮮芒果雪花冰、古早味糖水刨冰。</li>
+          <ul class="space-y-2 text-sm text-slate-600">
+            <li class="flex items-start gap-2">
+              <i class="fa-regular fa-square-check text-cyan-600 mt-1"></i>
+              <span><strong>防滑礁岩鞋/溯溪鞋</strong>：珊瑚礁海灘銳利，勿穿人字拖下水。</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-regular fa-square-check text-cyan-600 mt-1"></i>
+              <span><strong>手機掛頸防水套</strong>：划獨木舟與海灘錄影拍照神器。</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-regular fa-square-check text-cyan-600 mt-1"></i>
+              <span><strong>友善海洋防曬乳</strong>：保護珊瑚與綠蠵龜生態。</span>
+            </li>
           </ul>
         </div>
 
-        <!-- 東港美食巡禮 -->
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-3">
-          <div class="flex items-center gap-2 text-indigo-600 font-bold text-base">
-            <i class="fa-solid fa-shrimp"></i>
-            <span>東港必嚐海鮮點心</span>
+        <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm space-y-3">
+          <div class="flex items-center gap-2 font-bold text-slate-800 text-base border-b border-slate-100 pb-2">
+            <i class="fa-solid fa-kit-medical text-rose-500"></i>
+            <span>親子醫藥與隨身護理</span>
           </div>
-          <ul class="text-sm space-y-2.5 text-slate-600">
-            <li><strong>華僑市場黑鮪魚</strong>：油脂甘甜入口即化，產地直送生魚片。</li>
-            <li><strong>包蛋旗魚黑輪</strong>：現炸金黃酥脆，微甜彈牙，小孩的最愛。</li>
-            <li><strong>代煮海鮮</strong>：活蝦、鳳螺、大蛤蜊現挑現煮，原汁原味。</li>
+          <ul class="space-y-2 text-sm text-slate-600">
+            <li class="flex items-start gap-2">
+              <i class="fa-regular fa-square-check text-rose-500 mt-1"></i>
+              <span><strong>暈船藥（大人/幼兒劑型）</strong>：出發前與回程前半小時吃。</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-regular fa-square-check text-rose-500 mt-1"></i>
+              <span><strong>長效防蚊液 + 止癢膏</strong>：夜間導覽草叢蚊蟲必防。</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-regular fa-square-check text-rose-500 mt-1"></i>
+              <span><strong>大浴巾 / 吸水巾</strong>：水上活動上岸即時包覆防著涼。</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm space-y-3">
+          <div class="flex items-center gap-2 font-bold text-slate-800 text-base border-b border-slate-100 pb-2">
+            <i class="fa-solid fa-plug-circle-bolt text-amber-500"></i>
+            <span>電力與收納輔助</span>
+          </div>
+          <ul class="space-y-2 text-sm text-slate-600">
+            <li class="flex items-start gap-2">
+              <i class="fa-regular fa-square-check text-amber-500 mt-1"></i>
+              <span><strong>大容量行動電源 + 充電線</strong>：整天拍照錄影耗電快。</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-regular fa-square-check text-amber-500 mt-1"></i>
+              <span><strong>防水束口袋 / 乾濕分離袋</strong>：裝濕泳衣水母衣不滲水。</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i class="fa-regular fa-square-check text-amber-500 mt-1"></i>
+              <span><strong>輕便折疊推車</strong>：可寄放車行或在東港公園推行。</span>
+            </li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- 必買伴手禮 -->
-    <section id="gifts" class="space-y-6">
-      <div class="border-l-4 border-purple-500 pl-4">
-        <h2 class="text-2xl font-bold text-slate-800">推薦伴手禮清單</h2>
-        <p class="text-sm text-slate-500">送禮自用兩相宜，搭船前提貨好方便</p>
+    <!-- 私密秘境景點 (新增) -->
+    <section id="secret" class="space-y-4 pt-4">
+      <div class="border-b border-slate-200 pb-3 flex items-center justify-between">
+        <h2 class="text-xl sm:text-2xl font-black text-slate-800 flex items-center gap-2">
+          <i class="fa-solid fa-compass text-cyan-600"></i>
+          小琉球私密秘境推薦
+        </h2>
+        <span class="text-xs text-slate-500">避開團客、安全好走</span>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
-          <div class="font-bold text-purple-700 text-sm mb-1"><i class="fa-solid fa-cookie mr-1"></i>小琉球手工麻花捲</div>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            推薦「寶哥麻花捲」（烘炸不油膩、梅子/黑糖口味）或「王老師手工麻花捲」（傳統酥脆帶糖霜香）。
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm space-y-2">
+          <span class="text-xs font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">制高點海景</span>
+          <h3 class="font-black text-base text-slate-800">百年老榕樹秘境</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            榕樹後方穿過平坦小徑步行僅 30 公尺，瞬間鳥瞰整個厚石裙礁與湛藍漸層海面，步道平緩幼童極好走！
           </p>
         </div>
-        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
-          <div class="font-bold text-purple-700 text-sm mb-1"><i class="fa-solid fa-jar mr-1"></i>卡滋魷魚片 ＆ 飛魚卵泡菜</div>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            小琉球特有伴手禮！魷魚片越嚼越香，飛魚卵泡菜粒粒爆漿下飯，非常適合當晚酌配菜。
+
+        <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm space-y-2">
+          <span class="text-xs font-bold text-cyan-700 bg-cyan-100 px-2 py-0.5 rounded">天然海灣泳池</span>
+          <h3 class="font-black text-base text-slate-800">厚石魚澳（天然港灣）</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            外側天然礁岩阻絕大浪，內側水質清亮平靜如天然水池，人潮比花瓶岩少，退潮時小水窪充滿寄居蟹。
           </p>
         </div>
-        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
-          <div class="font-bold text-purple-700 text-sm mb-1"><i class="fa-solid fa-wine-glass mr-1"></i>澎坊免稅商品</div>
-          <p class="text-xs text-slate-600 leading-relaxed">
-            碼頭旁的免稅專區，可用免稅優惠購入美妝保養品、香水及菸酒，直接在搭船前辦理提領。
+
+        <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm space-y-2">
+          <span class="text-xs font-bold text-orange-700 bg-orange-100 px-2 py-0.5 rounded">夕陽落日名所</span>
+          <h3 class="font-black text-base text-slate-800">落日亭海景平台</h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            西側直面台灣海峽落日，晚霞粉橘絕美。具備無障礙寬敞木棧平台與涼亭，長輩幼兒能悠閒坐著吹海風。
           </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 美食與伴手禮地圖 -->
+    <section id="food" class="space-y-4 pt-4">
+      <div class="border-b border-slate-200 pb-3 flex items-center justify-between">
+        <h2 class="text-xl sm:text-2xl font-black text-slate-800 flex items-center gap-2">
+          <i class="fa-solid fa-utensils text-cyan-600"></i>
+          小琉球與東港美食推薦
+        </h2>
+        <span class="text-xs text-slate-500">大陣仗家庭友善</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- 小琉球名店 -->
+        <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm space-y-3">
+          <h3 class="font-bold text-slate-800 text-base border-b border-slate-100 pb-2 text-cyan-700">
+            🏝️ 小琉球必吃榜單
+          </h3>
+          <div class="space-y-2.5 text-xs sm:text-sm">
+            <div>
+              <span class="font-bold text-slate-800">大福羊肉海鮮店：</span>
+              <span class="text-slate-600">炒羊肉無羊騷味、招牌雨傘礁魚酥香，在地人也愛的合菜。</span>
+            </div>
+            <div>
+              <span class="font-bold text-slate-800">穀泰 Good Thai：</span>
+              <span class="text-slate-600">空間新穎有冷氣，打拋豬、泰式奶茶，小孩也超愛。</span>
+            </div>
+            <div>
+              <span class="font-bold text-slate-800">相思麵：</span>
+              <span class="text-slate-600">古法柴燒香濃肉燥乾麵、炸小琉球丸子與自炒辣椒。</span>
+            </div>
+            <div>
+              <span class="font-bold text-slate-800">洪媽媽早餐店：</span>
+              <span class="text-slate-600">琉球粿外酥內嫩、賓士黑糖包會爆漿，三十年老店必買。</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 東港與伴手禮 -->
+        <div class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm space-y-3">
+          <h3 class="font-bold text-slate-800 text-base border-b border-slate-100 pb-2 text-orange-700">
+            🐟 東港海味與必買伴手禮
+          </h3>
+          <div class="space-y-2.5 text-xs sm:text-sm">
+            <div>
+              <span class="font-bold text-slate-800">東港華僑市場：</span>
+              <span class="text-slate-600">現切黑鮪魚生魚片、現炸旗魚黑輪（包蛋超香）、代煮鮮蝦。</span>
+            </div>
+            <div>
+              <span class="font-bold text-slate-800">佳珍海產餐廳：</span>
+              <span class="text-slate-600">大船長老字號名店，招牌「蜂巢蝦」、櫻花蝦炒飯遠近馳名。</span>
+            </div>
+            <div>
+              <span class="font-bold text-slate-800">寶哥麻花捲：</span>
+              <span class="text-slate-600">非油炸、低溫烘烤脆爽不油膩，黑糖與煉乳口味超涮嘴。</span>
+            </div>
+            <div>
+              <span class="font-bold text-slate-800">澎坊免稅店（白沙港）：</span>
+              <span class="text-slate-600">離境前必逛，各專櫃保養品、香水與免稅酒類提貨。</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -410,16 +636,8 @@
   </main>
 
   <!-- 頁尾 -->
-  <footer class="bg-slate-900 text-slate-400 text-xs py-8 px-4 border-t border-slate-800">
-    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div>
-        <p class="font-semibold text-slate-200 text-sm">2026 小琉球 x 東港 二日親子跳島遊</p>
-        <p class="mt-0.5">預祝大家玩得盡興、吃得過癮、平安回家！</p>
-      </div>
-      <div class="text-center sm:text-right text-slate-500">
-        <p>檔案適用於 GitHub Pages 靜態網站發布</p>
-      </div>
-    </div>
+  <footer class="text-center text-xs text-slate-400 border-t border-slate-200 pt-6">
+    <p>小琉球 ✕ 東港 親子海島行・祝旅途愉快、平安順飛！</p>
   </footer>
 
 </body>
